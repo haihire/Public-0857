@@ -1,0 +1,365 @@
+.ResultPan {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.bg-opacity {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.bg-result {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  font-weight: bold;
+}
+.item_result {
+  position: absolute;
+  left: 0;
+  bottom: 60px;
+  right: 0;
+  height: 250px;
+  z-index: 10;
+}
+.item_result .item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background: url(../public/require/result.png?) no-repeat center center;
+  background-size: auto 100%;
+}
+.item_result .r_card {
+  position: absolute;
+  bottom: 15%;
+  height: 52%;
+  /* transform: scale(1.4); */
+}
+.item_result .r_card img {
+  height: 100%;
+  vertical-align: bottom;
+}
+.item_result .card1 {
+  left: 5%;
+  width: 32%;
+  text-align: right;
+  /* scale: 0.7; */
+}
+.item_result .card1 .popCardAreaP1 {
+  width: 80px;
+  height: 118px;
+  float: right;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+.item_result .card1 .popCardAreaP2 {
+  width: 80px;
+  height: 118px;
+  float: right;
+  margin-right: 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+.item_result .card1 .popCardAreaP3 {
+  position: absolute;
+  width: 80px;
+  height: 118px;
+  float: right;
+  bottom: -17px;
+  margin-right: 0px;
+  margin-left: 60px;
+  -webkit-transform: rotate(90deg);
+  border-radius: 4px;
+  transform: rotate(90deg);
+}
+.item_result .card2 {
+  right: 5%;
+  width: 32%;
+
+  /* scale: 0.7; */
+}
+.item_result .card2 .popCardAreaB1 {
+  width: 80px;
+  height: 118px;
+  float: left;
+  margin-top: 10px;
+}
+.item_result .card2 .popCardAreaB2 {
+  width: 80px;
+  height: 118px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.item_result .card2 .popCardAreaB3 {
+  position: absolute;
+  width: 80px;
+  height: 118px;
+  float: right;
+  bottom: -17px;
+  border-radius: 4px;
+  margin-left: 200px;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.item_result .r_score {
+  position: absolute;
+  left: 385px;
+  top: 30px;
+  line-height: 1em;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 4px #000;
+  font-size: 26px;
+  font-weight: bold;
+} /*width:3%;*/
+.item_result .r_score2 {
+  left: auto;
+  right: 385px;
+}
+.item_result .r_img {
+  position: absolute;
+  left: 30%;
+  right: 30%;
+  top: 0;
+  bottom: 0;
+  background-size: contain;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 241px auto;
+}
+.item_result .r_banker {
+  background-image: url(../public/require/r_banker.png);
+}
+.item_result .r_tie {
+  background-image: url(../public/require/r_tie.png);
+}
+.item_result .r_player {
+  background-image: url(../public/require/r_player.png);
+}
+/*---- Card Info ---*/
+
+/*---- 01. Heart ---*/
+.h_1 {
+  background: url(../public/require/poker.png) -6px -9px no-repeat;
+  background-size: 1115px 510px;
+}
+.h_2 {
+  background: url(../public/require/poker.png) -91px -9px no-repeat;
+  background-size: 1115px 510px;
+}
+.h_3 {
+  background: url(../public/require/poker.png) -176px -9px no-repeat;
+  background-size: 1115px 510px;
+}
+.h_4 {
+  background: url(../public/require/poker.png) -262px -9px no-repeat;
+  background-size: 1115px 510px;
+}
+.h_5 {
+  background: url(../public/require/poker.png) -347px -9px no-repeat;
+  background-size: 1115px 510px;
+}
+.h_6 {
+  background: url(../public/require/poker.png) -432px -9px no-repeat;
+  background-size: 1115px 510px;
+}
+.h_7 {
+  background: url(../public/require/poker.png) -517px -9px no-repeat;
+  background-size: 1115px 510px;
+}
+.h_8 {
+  background: url(../public/require/poker.png) -603px -9px no-repeat;
+  background-size: 1115px 510px;
+}
+.h_9 {
+  background: url(../public/require/poker.png) -688px -9px no-repeat;
+  background-size: 1115px 510px;
+}
+.h_10 {
+  background: url(../public/require/poker.png) -773px -9px no-repeat;
+  background-size: 1115px 510px;
+}
+.h_11 {
+  background: url(../public/require/poker.png) -860px -9px no-repeat;
+  background-size: 1115px 510px;
+}
+.h_12 {
+  background: url(../public/require/poker.png) -944px -9px no-repeat;
+  background-size: 1115px 510px;
+}
+.h_13 {
+  background: url(../public/require/poker.png) -1029px -9px no-repeat;
+  background-size: 1115px 510px;
+}
+
+/*---- 02. Dia ---*/
+.d_1 {
+  background: url(../public/require/poker.png) -6px -134px no-repeat;
+  background-size: 1115px 510px;
+}
+.d_2 {
+  background: url(../public/require/poker.png) -91px -134px no-repeat;
+  background-size: 1115px 510px;
+}
+.d_3 {
+  background: url(../public/require/poker.png) -176px -134px no-repeat;
+  background-size: 1115px 510px;
+}
+.d_4 {
+  background: url(../public/require/poker.png) -262px -134px no-repeat;
+  background-size: 1115px 510px;
+}
+.d_5 {
+  background: url(../public/require/poker.png) -347px -134px no-repeat;
+  background-size: 1115px 510px;
+}
+.d_6 {
+  background: url(../public/require/poker.png) -432px -134px no-repeat;
+  background-size: 1115px 510px;
+}
+.d_7 {
+  background: url(../public/require/poker.png) -517px -134px no-repeat;
+  background-size: 1115px 510px;
+}
+.d_8 {
+  background: url(../public/require/poker.png) -603px -134px no-repeat;
+  background-size: 1115px 510px;
+}
+.d_9 {
+  background: url(../public/require/poker.png) -688px -134px no-repeat;
+  background-size: 1115px 510px;
+}
+.d_10 {
+  background: url(../public/require/poker.png) -773px -134px no-repeat;
+  background-size: 1115px 510px;
+}
+.d_11 {
+  background: url(../public/require/poker.png) -860px -134px no-repeat;
+  background-size: 1115px 510px;
+}
+.d_12 {
+  background: url(../public/require/poker.png) -944px -134px no-repeat;
+  background-size: 1115px 510px;
+}
+.d_13 {
+  background: url(../public/require/poker.png) -1029px -134px no-repeat;
+  background-size: 1115px 510px;
+}
+
+/*---- 03. clover ---*/
+.c_1 {
+  background: url(../public/require/poker.png) -6px -259px no-repeat;
+  background-size: 1115px 510px;
+}
+.c_2 {
+  background: url(../public/require/poker.png) -91px -259px no-repeat;
+  background-size: 1115px 510px;
+}
+.c_3 {
+  background: url(../public/require/poker.png) -176px -259px no-repeat;
+  background-size: 1115px 510px;
+}
+.c_4 {
+  background: url(../public/require/poker.png) -262px -259px no-repeat;
+  background-size: 1115px 510px;
+}
+.c_5 {
+  background: url(../public/require/poker.png) -347px -259px no-repeat;
+  background-size: 1115px 510px;
+}
+.c_6 {
+  background: url(../public/require/poker.png) -432px -259px no-repeat;
+  background-size: 1115px 510px;
+}
+.c_7 {
+  background: url(../public/require/poker.png) -517px -259px no-repeat;
+  background-size: 1115px 510px;
+}
+.c_8 {
+  background: url(../public/require/poker.png) -603px -259px no-repeat;
+  background-size: 1115px 510px;
+}
+.c_9 {
+  background: url(../public/require/poker.png) -688px -259px no-repeat;
+  background-size: 1115px 510px;
+}
+.c_10 {
+  background: url(../public/require/poker.png) -773px -259px no-repeat;
+  background-size: 1115px 510px;
+}
+.c_11 {
+  background: url(../public/require/poker.png) -860px -259px no-repeat;
+  background-size: 1115px 510px;
+}
+.c_12 {
+  background: url(../public/require/poker.png) -944px -259px no-repeat;
+  background-size: 1115px 510px;
+}
+.c_13 {
+  background: url(../public/require/poker.png) -1029px -259px no-repeat;
+  background-size: 1115px 510px;
+}
+
+/*---- 04. spade ---*/
+.s_1 {
+  background: url(../public/require/poker.png) -6px -385px no-repeat;
+  background-size: 1115px 510px;
+}
+.s_2 {
+  background: url(../public/require/poker.png) -91px -385px no-repeat;
+  background-size: 1115px 510px;
+}
+.s_3 {
+  background: url(../public/require/poker.png) -176px -385px no-repeat;
+  background-size: 1115px 510px;
+}
+.s_4 {
+  background: url(../public/require/poker.png) -262px -385px no-repeat;
+  background-size: 1115px 510px;
+}
+.s_5 {
+  background: url(../public/require/poker.png) -347px -385px no-repeat;
+  background-size: 1115px 510px;
+}
+.s_6 {
+  background: url(../public/require/poker.png) -432px -385px no-repeat;
+  background-size: 1115px 510px;
+}
+.s_7 {
+  background: url(../public/require/poker.png) -517px -385px no-repeat;
+  background-size: 1115px 510px;
+}
+.s_8 {
+  background: url(../public/require/poker.png) -603px -385px no-repeat;
+  background-size: 1115px 510px;
+}
+.s_9 {
+  background: url(../public/require/poker.png) -688px -385px no-repeat;
+  background-size: 1115px 510px;
+}
+.s_10 {
+  background: url(../public/require/poker.png) -773px -385px no-repeat;
+  background-size: 1115px 510px;
+}
+.s_11 {
+  background: url(../public/require/poker.png) -860px -385px no-repeat;
+  background-size: 1115px 510px;
+}
+.s_12 {
+  background: url(../public/require/poker.png) -944px -385px no-repeat;
+  background-size: 1115px 510px;
+}
+.s_13 {
+  background: url(../public/require/poker.png) -1029px -385px no-repeat;
+  background-size: 1115px 510px;
+}
+
+/*---- Card Info ---*/

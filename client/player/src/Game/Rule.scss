@@ -1,0 +1,46 @@
+.layerpopup {
+  .layerpopup .content-info {
+    width: 90%;
+  }
+  @media screen and (max-width: 540px) {
+    .layerpopup .content-info {
+      width: 100%;
+    }
+    .layerpopup .content-box {
+      width: 100%;
+    }
+    #c_start_date {
+      width: 70px;
+    }
+    #c_end_date {
+      width: 70px;
+    }
+    .layerpopup .scroll {
+      width: 380px;
+    }
+    .layerpopup .p_table {
+      width: 1200px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .layerpopup .scroll {
+      width: 340px;
+    }
+  }
+  @media screen and (max-width: 370px) {
+    .layerpopup .scroll {
+      width: 320px;
+    }
+  }
+  @media screen and (max-width: 300px) {
+    .layerpopup .scroll {
+      width: 220px;
+    }
+    #c_start_date {
+      width: 30px;
+    }
+    #c_end_date {
+      width: 30px;
+    }
+  }
+}

@@ -1,0 +1,167 @@
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+div,
+span,
+applet,
+object,
+iframe,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+h1,
+h3,
+h4,
+h5,
+h6,
+fieldset,
+form,
+label,
+legend,
+input,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+dl,
+dt,
+dd,
+ol,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  vertical-align: baseline;
+  text-align: justify;
+  font-size: 100%;
+  font-family: auto;
+  font-style: normal;
+  font-size: 12px;
+}
+html,
+body {
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  font-size: 100%;
+  font-family: Nanum Gothic, dotum, "sans-serif";
+  font-style: normal;
+  font-size: 12px;
+}
+select {
+  margin: 0;
+  height: 23px;
+  font-size: 12px;
+}
+ol,
+ul,
+li {
+  list-style: none;
+  line-height: 12px;
+}
+blockquote,
+q {
+  quotes: none;
+}
+del {
+  text-decoration: line-through;
+}
+ins {
+  text-decoration: none;
+}
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: none;
+  content: "";
+}
+input[type="submit"] {
+  text-indent: 9999px;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a:hover,
+.button:hover,
+.content-button span:hover {
+  color: #ccc;
+  zoom: 1;
+  filter: alpha(opacity=70);
+  opacity: 0.7;
+  -webkit-transition: opacity 0.15s ease-in-out;
+  -moz-transition: opacity 0.15s ease-in-out;
+  -ms-transition: opacity 0.15s ease-in-out;
+  -o-transition: opacity 0.15s ease-in-out;
+  transition: opacity 0.15s ease-in-out;
+}
+input,
+li,
+a,
+span {
+  text-decoration: none;
+  outline-style: none;
+  font-weight: normal;
+}
+img {
+  border: 0 none;
+}
+
+.play_text_list {
+  color: #e5f900;
+  font-size: 11pt;
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: right;
+  margin-right: 110px;
+  font-family: auto;
+}
+.play_text {
+  color: #e5f900;
+  font-size: 11pt;
+  margin-top: 15px;
+  font-weight: bold;
+}
+.Loading {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

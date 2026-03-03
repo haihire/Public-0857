@@ -1,0 +1,552 @@
+/* src/App.css */
+body {
+  margin: 0;
+
+  color: #eee;
+  font-family: sans-serif;
+}
+
+.App_Range {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow: auto;
+}
+.Loading {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Login {
+  background-color: black;
+}
+.Header {
+  position: relative;
+  background-color: black;
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* center children, absolute centers title */
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+.header-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  color: #eee;
+  height: 100%;
+}
+.header-icon {
+  height: 80%;
+  margin-right: 0.5rem;
+}
+.home-btn,
+.back-btn {
+  background: none;
+  border: none;
+  color: #eee;
+  font-size: 1.5rem;
+  cursor: pointer;
+
+  height: 100%;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-btn {
+  position: absolute;
+  left: 1rem;
+}
+.back-btn {
+  position: absolute;
+  right: 1rem;
+}
+
+.back-btn:active {
+  transform: scale(0.9);
+}
+
+/* Optional ripple on click */
+.back-btn::after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  top: -50%;
+  left: -50%;
+  opacity: 0;
+  transform: scale(0);
+  transition: transform 0.4s, opacity 0.4s;
+}
+.back-btn:active::after {
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 0s, opacity 0.3s;
+}
+.back-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.site-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  flex: 0 0 15%;
+  max-width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #eee;
+  transition: transform 0.1s;
+}
+.site-button:hover {
+  transform: scale(1.05);
+}
+.site-button img {
+  width: 100%;
+  object-fit: contain;
+}
+.site-button span {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* ------ Modal styles ------ */
+/* …your existing styles… */
+
+/* ------ Modal styles ------ */
+.confirm-overlay,
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center; /* center vertically */
+  z-index: 1000;
+}
+.confirm-modal,
+.modal {
+  text-align: center;
+  background: #fff;
+  color: #000;
+  width: 100%;
+  max-width: 400px;
+  padding: 1.5rem;
+  box-sizing: border-box;
+
+  /* slide up from below */
+  transform: translateY(100%);
+  animation: slideUp 0.3s forwards;
+}
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+  }
+}
+
+.modal h2 {
+  margin: 0 0 1rem;
+  font-weight: normal;
+}
+
+/* inputs: no outer border, only bottom line */
+.modal input {
+  width: 100%;
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  background: transparent;
+  color: #000;
+  font-size: 1rem;
+}
+
+/* mint bottom-border on focus */
+.modal input:focus {
+  border-bottom-color: #66afe9;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* both Cancel + OK now transparent background, mint text */
+.modal-buttons button {
+  background: transparent;
+  color: #66afe9;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* subtle hover feedback */
+.modal-buttons button:hover {
+  opacity: 0.8;
+}
+
+/* Lobby container */
+.lobby {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+/* Wrap all room buttons */
+.room-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+/* Individual room button */
+.room-button {
+  flex: 0 0 auto;
+  padding: 0.75rem 1.5rem;
+  background: #66afe9; /* sky-blue background */
+  color: white; /* black text for contrast */
+  border: none; /* remove old border */
+  border-radius: 4px;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.room-button:hover {
+  background: #559fd3;
+  transform: scale(1.05);
+}
+
+/* === Room Details === */
+.room-details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+.bet-buttonbtn {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+/* Top bet buttons */
+.bet-buttons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+}
+.bet-btn {
+  flex: 1;
+  text-align: center;
+
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.1s;
+}
+.bet-btn:hover {
+  transform: scale(0.9);
+}
+.bet-player {
+  background: #305fd9;
+} /* blue */
+.bet-tie {
+  background: #3eb489;
+} /* green */
+.bet-banker {
+  background: #d93025;
+} /* red */
+
+/* Pair toggles */
+/* Pair toggles container */
+.pair-toggles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  align-items: center;
+  gap: 1.5rem;
+  box-sizing: border-box;
+  height: 50px;
+}
+.pair-group {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+
+  height: 100%;
+}
+/* Label text */
+.switch-label {
+  color: #eee;
+  font-size: 0.9rem;
+}
+
+/* The switch itself */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+/* hide the native checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* the slider track */
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 20px;
+  transition: background-color 0.2s;
+}
+
+/* the knob */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+/* when checked, turn track blue and move knob */
+.switch input:checked + .slider {
+  background-color: #66afe9;
+}
+.switch input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+/* Control buttons */
+.control-btn {
+  width: 100%;
+  padding: 0.75rem 0;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.shoe-btn {
+  background: #ccc;
+  color: #000;
+}
+.error-btn {
+  background: #d93025;
+  color: #fff;
+}
+
+/* Action buttons grid */
+.action-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+.action-btn {
+  padding: 0.75rem;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+.action-btn img {
+  height: 100%;
+  width: auto;
+}
+.action-btn.green {
+  background: #3eb489;
+}
+.action-btn.blue {
+  background: #66afe9;
+}
+.action-btn.orange {
+  background: #f27042;
+}
+.action-btn.purple {
+  background: #8e44ad;
+}
+.action-btn.yellow {
+  background: #f1c40f; /* 옐로우 */
+}
+.action-btn.teal {
+  background: #1abc9c; /* 틸 */
+}
+.action-btn.pink {
+  background: #ff69b4; /* 핑크 */
+}
+.action-btn.brown {
+  background: #a0522d; /* 브라운 */
+}
+.action-btn.lavender {
+  background: #c39bd3; /* 라벤더 */
+}
+.action-btn.cream {
+  background: #f5f5dc; /* 크림 */
+}
+/* Container: three rows full width */
+.result-inputs {
+  color: #000;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  width: 100%;
+  gap: 1rem; /* optional spacing between rows */
+}
+
+/* Each row is three equal columns */
+.result-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center; /* vertical centering */
+}
+.result-row .left,
+.result-row .right {
+  cursor: pointer;
+}
+
+/* Center cell styling */
+.result-row .center {
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Left/right keep empty but still take space */
+.result-row .left,
+.result-row .right {
+  text-align: center;
+
+  border-bottom: 1px solid #66afe9;
+}
+/* */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  margin-right: 0.5rem;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.2s;
+}
+.slider:before {
+  position: absolute;
+  /* content: \"\"; */
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.2s;
+}
+input:checked + .slider {
+  background-color: #66afe9;
+}
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+.slider.round {
+  border-radius: 20px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+.switch-label {
+  color: black;
+  margin-right: 1.5rem;
+  font-size: 0.8rem;
+}
+
+.confirm-modal p {
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 1rem;
+}
+.confirm-modal input {
+  margin-bottom: 30px;
+}
+.confirm-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.confirm-buttons button {
+  flex: 1;
+  padding: 0.5rem 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.confirm-buttons button:first-child {
+  background: #ccc;
+  color: #000;
+}
+.confirm-buttons button:last-child {
+  background: #66afe9;
+  color: #fff;
+}

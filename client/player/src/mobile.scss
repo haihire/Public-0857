@@ -1,0 +1,1450 @@
+//가로 모드 일 떄 여기가 중요
+@media screen and (orientation: landscape) {
+  .Login_wrap {
+    .form-container2 {
+      height: 100%;
+    }
+  }
+  .Lobby_wrap {
+    .room_list .header {
+      border: 3px solid #bb1352;
+    }
+    .quick-button button {
+      background: none;
+      background-color: #ff710d;
+    }
+    .room_list .game-list {
+      padding: unset;
+    }
+
+    .game-room .box.speed,
+    .game-room .box.select.selected {
+      margin: 1px;
+      width: 47%;
+      overflow: hidden;
+    }
+  }
+}
+@media screen and (orientation: portrait) {
+  .Login_wrap {
+    .form-container2 {
+      height: 80%;
+    }
+  }
+  .Lobby_wrap {
+    .room_list .header {
+      border: 3px solid #bb1352;
+    }
+    .quick-button button {
+      background: none;
+      background-color: #ff710d;
+    }
+    @media screen and (max-width: 434px) {
+      .game-room .box.speed,
+      .game-room .box.select.selected {
+        width: 94%;
+        overflow: hidden;
+      }
+    }
+    .type > div > span span {
+      font-size: 11px;
+    }
+
+    .box.speed .type h3.all span {
+      font-size: 15px;
+    }
+  }
+
+  body {
+    background-color: #e7e7e7;
+  }
+
+  .Game_wrap {
+    .size-mode {
+      transform: scale(1);
+      margin: 0;
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+    }
+    .game-content {
+      height: auto;
+    }
+    .game-content > div {
+      float: inherit;
+      // background: url(../public/require/bg_game_background3_m.png) no-repeat 0 0;
+      background-size: cover;
+      filter: none !important;
+    }
+
+    .movie-box {
+      width: 100%;
+      height: auto;
+      background-color: #000 !important;
+    }
+    .movie-box iframe {
+      width: 100%;
+      height: 212px;
+    }
+    #container_video {
+      height: 212px;
+    }
+    .betting-info {
+      padding-top: 66px;
+      position: inherit;
+      height: 130px;
+    }
+    .betting-info .table-info {
+      // position: relative;
+      // transform-origin: 0% 0%;
+      // transform: scale(0.5);
+    }
+    .table-info {
+      width: 100%;
+    }
+    .scoreboard {
+      width: 100%;
+      height: 132px;
+    }
+
+    .scoreboard .beadplate2 {
+      width: 43%;
+      height: 132px;
+      overflow: hidden;
+      background-size: 70%;
+      overflow-x: auto;
+      border-left: unset;
+    }
+    .scoreboard .beadplate2 li {
+      width: 21px;
+      height: 21px;
+    }
+    .scoreboard .bigroad li,
+    .scoreboard .smallroad li,
+    .scoreboard .bigeyeboy li,
+    .scoreboard .cockroachpig li {
+      width: 10px;
+      height: 10px;
+      text-align: center;
+    }
+    .scoreboard .bigroad {
+      width: 57%;
+      height: 68px;
+      overflow: hidden;
+      overflow-x: auto;
+    }
+    .scoreboard .bigeyeboy {
+      width: 57%;
+      height: 33px;
+      overflow: hidden;
+      overflow-x: auto;
+    }
+    .scoreboard .smallroad {
+      width: calc(57% / 2);
+      height: 33px;
+      overflow: hidden;
+      overflow-x: auto;
+    }
+
+    .scoreboard .smallroad,
+    .scoreboard .cockroachpig {
+      background-size: 50%;
+    }
+    .scoreboard .cockroachpig {
+      width: calc(57% / 2);
+      height: 33px;
+      overflow: hidden;
+      overflow-x: auto;
+    }
+    .scoreboard .beadplate2 li DIV {
+      font-size: 20px;
+    }
+
+    .c1_1,
+    .c2_1 {
+      border: 1px solid #e71b1b;
+    }
+    .c1_2,
+    .c2_2 {
+      border: 1px solid #0042ff;
+    }
+    .lefttop.c3_1:after {
+      position: absolute;
+      left: 2px;
+    }
+    .lefttop.c3_2:after {
+      position: absolute;
+      left: 2px;
+    }
+    .leftbottom.c3_1:after {
+      position: absolute;
+      // left: 0px;
+    }
+    .leftbottom.c3_2:after {
+      position: absolute;
+      // left: 0px;
+    }
+    .righttop.c3_1:after {
+      position: absolute;
+      left: 2px;
+      bottom: 0px;
+    }
+    .righttop.c3_2:after {
+      position: absolute;
+      left: 2px;
+      bottom: 0px;
+    }
+    .rightbottom.c3_1:after {
+      position: absolute;
+      bottom: 0px;
+    }
+    .rightbottom.c3_2:after {
+      position: absolute;
+      bottom: 0px;
+    }
+    .scoreboard li span {
+    }
+    .c3_1:after {
+      width: 1px;
+      height: 5px;
+    }
+    .c3_2:after {
+      width: 1px;
+      height: 5px;
+    }
+    .glr_1,
+    .glr_2,
+    .glr_3,
+    .glr_4,
+    .glr_1_1,
+    .glr_2_1,
+    .glr_3_1,
+    .glr_4_1 {
+      border: 1px solid #e71b1b;
+    }
+    .glr_5,
+    .glr_6,
+    .glr_7,
+    .glr_8,
+    .glr_5_1,
+    .glr_6_1,
+    .glr_7_1,
+    .glr_8_1 {
+      border: 1px solid #0042ff;
+    }
+    .glr_1_1 span:after,
+    .glr_2_1 span:after,
+    .glr_3_1 span:after,
+    .glr_4_1 span:after,
+    .glr_5_1 span:after,
+    .glr_6_1 span:after,
+    .glr_7_1 span:after,
+    .glr_8_1 span:after {
+      bottom: -2px;
+      right: 2px;
+      width: 1px;
+      height: 8px;
+    }
+    .betting-info .myinfo {
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 1111;
+      width: 220px;
+      float: inherit;
+      height: 100%;
+      background: transparent;
+      box-shadow: none;
+      display: block;
+      padding: 0;
+      margin: 0;
+      transition: all 0.5s;
+    }
+    .betting-info .myinfo.close {
+      background: transparent !important;
+      width: 0;
+    }
+    .betting-info .myinfo .money,
+    .betting-info .myinfo .money2 {
+      display: none;
+    }
+    .table-top {
+      margin: 0;
+      position: fixed;
+      top: 0;
+      z-index: 1;
+      left: 0;
+      width: 100%;
+      height: 46px;
+    }
+    .etc-info {
+      z-index: 1;
+      position: absolute;
+      display: table;
+      width: 150px;
+      height: 60px;
+      padding: 0;
+      margin-top: -67px;
+      float: inherit;
+      width: 100%;
+      overflow: hidden;
+      box-shadow: none;
+      border-bottom: 1px solid #dedede;
+      border-top: 1px solid #fff;
+    }
+    .mobile .sysbtn_tiger {
+      position: fixed;
+      right: 0;
+      top: 60px;
+      width: 220px;
+      display: block;
+      transition: all 0.6s;
+      padding: 0;
+      margin: 0;
+      opacity: 1;
+    }
+    .mobile .sysbtn_tiger:before {
+      content: "";
+      display: block;
+      z-index: 0;
+      width: 220px;
+      height: 100%;
+      background: rgb(0 0 0 / 65%);
+      position: fixed;
+      top: 0;
+      right: 0;
+      opacity: 1;
+    }
+    .mobile .close .sysbtn_tiger:before {
+      opacity: 0;
+      right: -220px;
+    }
+    .mobile .sysbtn_tiger.open {
+      margin-right: 0;
+    }
+    .mobile .sysbtn_tiger.close {
+      margin-right: -150px;
+    }
+    .sysbtn_tiger li {
+      position: relative;
+      z-index: 1;
+      display: block !important;
+      width: 100% !important;
+      margin: 0 !important;
+      padding: 4px 12px 0 12px !important;
+      box-sizing: border-box;
+    }
+    .betting-table {
+      position: inherit !important;
+      width: 100%;
+      height: 350px;
+      background-image: none;
+      background-color: black;
+    }
+    .betting-table .notice {
+      display: none;
+    }
+    .casino-button {
+      overflow: hidden;
+      margin: 0;
+      background: none;
+    }
+    .casino-button .btn-top,
+    .casino-button .btn-bottom {
+      padding: 0 9px;
+      margin-top: 10px;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+    .casino-button .btn-bottom {
+      margin-top: 0;
+    }
+    .casino-button .btn-top > div {
+      width: 33.33%;
+      box-sizing: border-box;
+      padding: 6px;
+      height: auto;
+      border-bottom: 1px solid #1e3c39;
+      border-right: 1px solid #1e3c39;
+    }
+    .casino-button .btn-top > div:last-child,
+    .casino-button .btn-bottom > div:last-child {
+      border-right: 0 none;
+    }
+    .casino-button .btn > div {
+      padding-top: 8px;
+      border: 2px solid #395b55;
+      box-sizing: border-box;
+      height: 80px;
+      background-color: #32504a;
+      border-radius: 10px;
+      box-shadow: 0 0 3px rgb(0 0 0 / 50%);
+      cursor: pointer;
+    }
+    .casino-button .btn .middle img {
+      width: 14px;
+      height: auto;
+    }
+    .casino-button .btn > div:hover,
+    .casino-button .btn .select {
+      border-color: #70d2be;
+      background-color: #25615b;
+      border-radius: 10px;
+      box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+    }
+    .casino-button .btn .top {
+      font-size: 16px;
+    }
+    .casino-button .btn .middle {
+      padding: 2px 0;
+    }
+    .casino-button .btn-top > div.center {
+      width: 33.33%;
+    }
+    .casino-button .btn-bottom > div {
+      padding: 6px;
+      width: 50%;
+      height: auto;
+      border-right: 1px solid #1e3c39;
+      box-sizing: border-box;
+    }
+    .casino-button .btn .bottom {
+      padding-top: 2px;
+      font-size: 16px;
+    }
+    .casino-button .btn-bottom > div:first-child {
+      margin-right: 0;
+    }
+    .betting-button,
+    .chip-button {
+      position: relative;
+    }
+    .betting-button {
+      width: 100%;
+      bottom: -10px;
+      height: 60px;
+    }
+    .betting-button > span {
+      display: block;
+      width: 100%;
+      font-size: 0;
+      text-align: center;
+      height: 100%;
+    }
+    .betting-button button {
+      display: inline-block;
+      width: 30%;
+      background-size: 100% auto;
+      margin: 0 4px 0 0;
+      height: 100%;
+      padding-bottom: 30px;
+      line-height: initial;
+    }
+    .betting-button button:last-child {
+      margin-right: 0;
+    }
+    .betting-button button span {
+      font-size: 11px;
+    }
+    .chip-button {
+      padding-top: 0;
+      width: 100%;
+      background: none;
+      height: 83px;
+    }
+    .chip-button .chip_list2 {
+      transform: scale(0.6) translateZ(0);
+      transform-origin: 0 0;
+    }
+    .chip-button .chip_arrow_left {
+      top: -6%;
+      left: 4%;
+      width: 6%;
+      height: 83px;
+      text-align: center;
+    }
+    .chip-button .chip_arrow_right {
+      top: -6%;
+      right: 4%;
+      height: 90px;
+      width: 6%;
+      text-align: center;
+    }
+    .chip-button .chip_arrow_left img,
+    .chip-button .chip_arrow_right img {
+      margin-top: 39px;
+      width: 10px;
+      height: auto;
+    }
+    .chip-button .chip_list {
+      padding-top: 10px;
+      height: 90px;
+      width: 80%;
+    }
+    .chip-button span.select:after {
+      margin-left: -6px;
+    }
+    .etc-info > ul {
+      display: table-cell;
+    }
+    .etc-info .beadplate2 {
+      padding: 0;
+      width: 48%;
+      padding: 6px 8px;
+      font-size: 0;
+      height: 64px;
+      transform: translateX(0) translateY(0);
+    }
+    .etc-info .beadplate2 li {
+      display: inline-block;
+      text-align: center;
+      width: 20%;
+      transform: scale(0.8);
+    }
+    .etc-info .beadplate2 li strong {
+      display: block;
+      padding-top: 6px;
+      position: inherit;
+      text-align: center;
+      width: 100%;
+      right: 0;
+      top: 0;
+      font-size: 16px;
+    }
+    .etc-info .beadplate2 div {
+      margin: 0;
+      background-size: 13px auto;
+      width: 30px;
+      height: 30px;
+      line-height: 24px;
+    }
+    .etc-info > ul:last-child {
+      padding: 11px 8px;
+      width: 52%;
+      font-size: 0;
+      box-sizing: border-box;
+      height: 64px;
+      background: transparent;
+    }
+    .etc-info .beadplate2 div {
+      font-size: 20px;
+      position: relative;
+    }
+    .etc-info .etc-infosub ul {
+      width: 100%;
+      padding: 10px 3px;
+      font-size: 0;
+    }
+    .etc-info .etc-infosub li {
+      width: 49%;
+      vertical-align: top;
+      font-size: 0;
+      box-sizing: border-box;
+    }
+    .etc-info .etc-infosub > li:first-child {
+      margin-right: 2%;
+      margin-bottom: 0;
+      box-sizing: border-box;
+    }
+    .etc-info .etc-infosub > li:last-child {
+      margin-right: 0;
+    }
+    .etc-info .etc-infosub li li:first-child {
+      width: 31%;
+    }
+    .etc-info .etc-infosub li li {
+      width: 23%;
+      height: 18px;
+      font-size: 0;
+      text-align: center;
+      position: relative;
+    }
+    .etc-info ul:last-child img {
+      width: 18px;
+      height: 18px;
+      vertical-align: -8px;
+    }
+    .etc-info .etc-infosub div {
+      width: 18px;
+      height: 18px;
+    }
+    .scoreboard.chinazoom .beadplate2 {
+      width: 275px;
+      // background: url(../public/require/board_bg_logo.png) no-repeat 89px 104px;
+      background-size: 60% auto;
+    }
+    .mobile .bigroad .red,
+    .mobile .bigroad .blue {
+      border-width: 3px;
+    }
+    .mobile .bigroad .tie {
+      width: 4px;
+    }
+    .mobile .scoreboard.chinazoom .bigroad,
+    .mobile .scoreboard.chinazoom .smallroad {
+      position: relative;
+      width: 458px;
+    }
+    .mobile .scoreboard.chinazoom .bigeyeboy {
+      width: 230px;
+    }
+    .mobile .scoreboard.chinazoom .bigroad:before,
+    .mobile .scoreboard.chinazoom .bigeyeboy:before,
+    .mobile .scoreboard.chinazoom .cockroachpig:before {
+      content: "";
+      display: block;
+      width: 47px;
+      height: 47px;
+      position: absolute;
+      z-index: 1;
+      bottom: 0;
+      right: 0;
+      // background: url(../public/require/icon_closeup.png) no-repeat center
+      //   center;
+      background-size: cover;
+      cursor: pointer;
+    }
+    .mobile .scoreboard.chinazoom .bigroad:active:before,
+    .mobile .scoreboard.chinazoom .bigeyeboy:active:before,
+    .mobile .scoreboard.chinazoom .cockroachpig:active:before {
+      opacity: 0.6;
+    }
+    .mobile .scoreboard.chinazoom .cockroachpig {
+      width: 228px;
+    }
+    .mobile .scoreboard .smallroad span {
+      width: 5px;
+      height: 5px;
+    }
+    .mobile .smallroad .red,
+    .mobile .smallroad .blue {
+      border-width: 2px;
+    }
+    .mobile .smallroad .lefttop,
+    .mobile .bigeyeboy .lefttop {
+      top: 1px;
+      left: 1px;
+    }
+    .mobile .smallroad .righttop,
+    .mobile .bigeyeboy .righttop {
+      bottom: 1px;
+      left: 1px;
+    }
+    .mobile .smallroad .leftbottom,
+    .mobile .bigeyeboy .leftbottom {
+      top: 1px;
+      right: 1px;
+    }
+    .mobile .smallroad .rightbottom,
+    .mobile .bigeyeboy .rightbottom {
+      bottom: 1px;
+      right: 1px;
+    }
+    .mobile .betting-info .myinfo.close > ul {
+      right: -220px;
+      opacity: 0;
+    }
+    .pannelbtn {
+      top: 8px;
+      right: 8px;
+      left: inherit;
+      z-index: 1;
+      width: 46px;
+      height: 46px;
+      margin: 0;
+      background: none;
+    }
+    .pannelbtn.open i,
+    .pannelbtn.close i {
+      top: 0;
+      width: 46px;
+      height: 46px;
+      left: 0;
+      width: 46px;
+      height: 46px;
+      background: url(../public/require/icon_allmenu.png?1) no-repeat center
+        center;
+      background-size: 40px auto;
+    }
+    .pannelbtn.open i {
+      background-position: center 7px;
+    }
+    .pannelbtn.close i {
+      background-position: center -71px;
+    }
+    .pannelbtn:hover i {
+      opacity: 1;
+    }
+    .pannelbtn:active i {
+      opacity: 0.4;
+      transition: all 0.1s;
+    }
+    .backbtn {
+      position: absolute;
+      top: 8px;
+      right: 54px;
+      z-index: 1;
+      display: block;
+      width: 50px;
+      height: 50px;
+      background: url(../public/require/icon_backbtn.png) no-repeat center
+        center;
+      background-size: 40px auto;
+
+      display: none;
+    }
+    .backbtn:active {
+      opacity: 0.4;
+      z-index: 2;
+    }
+    .sysbtn_tiger li button {
+      border: 0 none;
+      box-shadow: none;
+      height: 50px;
+      border: 2px solid #db7721;
+      background-color: #000;
+      box-shadow: inset 1px 1px 0 #cfc042, inset -1px -1px 0 #b09136,
+        inset -2px -2px 0 #4c352d, 0 0 20px rgba(0, 0, 0, 0.4);
+      color: #fff;
+      padding-left: 46px;
+      text-align: left;
+    }
+    .close .sysbtn_tiger li button {
+      width: 100%;
+      height: 66px;
+      border: 2px solid #a27c44;
+      background-color: #65493f;
+      box-shadow: inset 1px 1px 0 #cfc042, inset -1px -1px 0 #b09136,
+        inset -2px -2px 0 #4c352d, 0 0 10px #000;
+      background-image: url(../public/require/game-icon2.png);
+      background-repeat: no-repeat;
+      color: #fff;
+      background-size: 18px auto;
+      outline: none;
+    }
+    .sysbtn_tiger li.move button {
+      background-image: url(../public/require/game-icon2.png);
+      background-repeat: no-repeat;
+      background-color: #000;
+    }
+    .sysbtn_tiger li.fullscreen button {
+      background-image: url(../public/require/game-icon2.png);
+      background-repeat: no-repeat;
+      background-color: #000;
+    }
+    .sysbtn_tiger li.history button {
+      background-image: url(../public/require/game-icon2.png);
+      background-repeat: no-repeat;
+      background-color: #000;
+    }
+    .sysbtn_tiger li.exit button {
+      background-image: url(../public/require/game-icon2.png);
+      background-repeat: no-repeat;
+      background-color: #000;
+    }
+    .sysbtn_tiger li.re button {
+      background-image: url(../public/require/game-icon2.png);
+      background-repeat: no-repeat;
+      background-color: #000;
+    }
+    .betting-info .myinfo.close button {
+      width: 100%;
+      height: 50px;
+    }
+    .close .sysbtn_tiger li span {
+      display: inline-block;
+    }
+    .sysbtn_tiger li.move button,
+    .close .sysbtn_tiger li.move button {
+      border-radius: 4px;
+      background-position: 8px 11px;
+    }
+    .sysbtn_tiger li.fullscreen button,
+    .close .sysbtn_tiger li.fullscreen button {
+      border-radius: 4px;
+      background-position: 8px -205px;
+    }
+    .sysbtn_tiger li.history button,
+    .close .sysbtn_tiger li.history button {
+      border-radius: 4px;
+      background-position: 8px -59px;
+    }
+    .sysbtn_tiger li.exit button,
+    .close .sysbtn_tiger li.exit button {
+      border-radius: 4px;
+      background-position: 8px -128px;
+    }
+    .sysbtn_tiger li.re button,
+    .close .sysbtn_tiger li.re button {
+      border-radius: 4px;
+      background-position: 8px -281px;
+    }
+    .sysbtn_tiger li span {
+      top: -2px;
+    }
+    .sysbtn_tiger li button:hover {
+      background-color: #383029;
+      border-color: #fff;
+      box-shadow: none;
+    }
+    .sysbtn_tiger li:last-child {
+      padding-right: 8px;
+    }
+    .sysbtn_tiger li button:hover span {
+      color: #fff;
+    }
+    .movie-box .game_status {
+      top: 57px;
+      left: 8px;
+      width: auto;
+      line-height: 17px;
+      padding: 0;
+      border: 2px solid #dbbc2b;
+      background-color: rgb(68 54 7 / 63%);
+      border-radius: 7px;
+      overflow: hidden;
+    }
+    .movie-box .game_status div {
+      text-align: center;
+      padding-right: 8px;
+      padding-left: 8px;
+      padding-top: 0;
+    }
+    .movie-box .game_status > div:first-child {
+      border-bottom: 1px solid #775f1a;
+    }
+    .movie-box .game_status * {
+      font-size: 11px;
+    }
+    .countdown_status div {
+      padding-top: 18px;
+      padding-right: 0;
+      letter-spacing: 0;
+      font-size: 20px;
+    }
+    .countdown_status {
+      top: 55px;
+      right: 8px;
+      width: 46px;
+      height: 46px;
+      background-size: 100% auto;
+    }
+    .money-info {
+      width: 100%;
+      padding: 6px 0;
+      display: table;
+      overflow: hidden;
+      border-bottom: 1px solid #2e3c3e;
+      border-top: 1px solid #273532;
+      background-color: #30423e;
+    }
+    .money-info li {
+      display: table-cell;
+      width: 33.33%;
+      padding: 0 5px;
+      color: #fff;
+      font-size: 0;
+      height: 20px;
+    }
+    .money-info div {
+      padding: 4px;
+      border: 2px solid #db7721;
+      background-color: #000;
+      height: 16px;
+      border-radius: 8px;
+      box-shadow: inset 1px 1px 0 rgb(0 0 0 / 50%);
+    }
+    .money-info li:last-child div {
+      // border-color: #e4a724;
+      // background-color: rgb(0 0 0 / 74%);
+    }
+    .money-info li:nth-child(2) {
+      padding-right: 0;
+      padding-left: 0;
+    }
+    .money-info li span {
+      display: inline-block;
+      height: 12px;
+      font-size: 11px;
+      line-height: 16px;
+    }
+    .money-info li span:first-child {
+      color: #ffd584;
+      float: left;
+      vertical-align: top;
+      letter-spacing: -1px;
+      width: 40px;
+    }
+    .money-info li span:last-child {
+      float: right;
+      text-align: right;
+      vertical-align: top;
+      font-weight: bold;
+      font-size: 11px;
+      letter-spacing: -0.25px;
+    }
+    .money-info.japan li span:first-child {
+      color: #ffd584;
+      float: left;
+      vertical-align: top;
+      letter-spacing: -1px;
+      width: 50px;
+    }
+    .money-info.japan #txt_title_balance {
+      position: relative;
+      top: -3px;
+      font-size: 11px;
+      line-height: 12px;
+    }
+
+    .money-info.japan .japan {
+      color: #fff !important;
+    }
+
+    .sound_mute_class {
+      bottom: 2px;
+      left: 10px;
+      width: 50px;
+      z-index: 1;
+      height: 30px;
+    }
+    .sound_mute_class DIV {
+      width: 30px;
+      height: 30px;
+    }
+    .color_change_btn {
+      left: 50px;
+    }
+    .txt-red {
+      color: #ff5151 !important;
+    }
+    .table-top .type {
+      position: initial;
+      top: initial;
+      left: initial;
+      padding-left: 47px;
+    }
+    .table-top h3 {
+      display: inline-block;
+      // margin-top: 3px;
+      padding: 5px 8px;
+      // background-color: #00000085;
+      color: #fff;
+      position: initial;
+      top: initial;
+      left: initial;
+      font-size: 11px;
+      text-shadow: none;
+    }
+    #txt_title_game,
+    .table-top h3 span {
+      padding-left: 0;
+      font-size: 11px;
+      text-shadow: none;
+      color: #fff;
+    }
+    .table-top .logo {
+      padding: 0px;
+      z-index: 2;
+      position: absolute;
+      top: 0;
+      left: 0;
+      // background-color: #000;
+    }
+    .table-top .logo img {
+      width: 47px;
+      height: auto;
+    }
+    .table-top .type > div {
+      top: 30px;
+      right: initial;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      padding: 00;
+      z-index: 1;
+      display: block;
+      box-sizing: border-box;
+    }
+    .type span,
+    .table-top .type > div > span {
+      font-size: 11px;
+    }
+    .table-top .type > div > span {
+      position: relative;
+      padding: 4px 26px 4px 10px;
+      border: 1px solid #d79d22;
+      border-left: 0;
+      border-radius: 0 10px 10px 0;
+      background-color: rgb(22 22 22 / 86%);
+      text-shadow: none;
+      color: #fff;
+    }
+    .table-top .type > div > span > span:after {
+      content: "";
+      display: block;
+      width: 20px;
+      z-index: 1;
+      height: 20px;
+      position: absolute;
+      top: 0;
+      right: 8px;
+      background: url(../public/require/icon_arrow_w_bt.png) no-repeat right
+        center;
+      background-size: 12px auto;
+      opacity: 0.9;
+    }
+    .type > div:hover > div,
+    .table-top .type div.on {
+      display: block;
+    }
+    .table-top .type > div:hover > span > span:after,
+    .table-top .type > div.on > span > span:after {
+      // background: url(../public/require/icon_arrow_w_tp.png) no-repeat right
+      //   center;
+      background-size: 12px auto;
+    }
+    .table-top .type ul {
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .table-top .type > div > div {
+      position: fixed;
+      left: 0;
+      top: 48px;
+      width: 190px;
+      box-sizing: border-box;
+      border-left: 0 none;
+      border-right: 1px solid #4c370b;
+      border-radius: 0 8px 8px 0;
+      border-top-color: #d79d22;
+      border-bottom-color: #d79d22;
+      background-color: rgb(5 4 3 / 85%);
+    }
+    .table-top .type li {
+      padding-bottom: 0;
+      padding-top: 4px;
+    }
+    .type li span:first-child {
+      float: initial;
+    }
+    // .type li div:last-child {
+    // }
+    .tablemovebtn {
+      display: block;
+      position: fixed;
+      right: 0px;
+      top: 101px;
+      width: 22px;
+      height: 60px;
+      border-radius: 4px 0 0 4px;
+      border-top: 2px solid #cca343;
+      border-left: 2px solid #a88030;
+      background: rgb(171 118 0);
+      background: linear-gradient(
+        90deg,
+        rgb(157 94 0) 0%,
+        rgb(213 152 20) 49%,
+        rgb(160 114 26) 100%
+      );
+      box-shadow: 0px 0px 2px rgb(5 5 5 / 42%), inset 1px 1px 0 #7e5e1d,
+        inset 0px -1px 0 #b1941b;
+      display: none;
+    }
+    .tablemovebtn:active {
+      cursor: pointer;
+      opacity: 0.5;
+      transition: all 0.5s;
+    }
+    .tablemovebtn span {
+      display: inline-block;
+      width: 22px;
+      height: 60px;
+      background: url(../public/require/icon_arrow_change.png) no-repeat center
+        center;
+      background-size: 13px auto;
+      text-indent: -9999px;
+    }
+    .layerpopup {
+      overflow: auto;
+      position: fixed;
+      bottom: 0;
+      height: 600px;
+    }
+    .layerpopup.gameover {
+      z-index: 1111;
+    }
+    .layerpopup.gameover .content-info {
+      width: 100% !important;
+      height: 150px;
+    }
+    .gameover .animation {
+      left: 50%;
+      margin-left: -100px;
+      width: 80%;
+    }
+    .gameover .animation-etc {
+      right: 50%;
+      margin-right: -200px;
+      top: 100px;
+    }
+    .layerpopup.gameover .result-bonus {
+      background-position: center center;
+      background-size: 120% auto;
+    }
+    .gameover .result-bonus .money {
+      top: 85px;
+      font-size: 36px;
+    }
+    .item_result {
+      bottom: 0;
+      width: 100%;
+    }
+    .item_result .item {
+      width: 100%;
+      background-size: 96% auto; /* position:absolute; */ /* bottom:0; */
+    }
+    .item_result .r_img {
+      background-size: 87% auto;
+      background-position: center 40px;
+    }
+    .item_result .r_card {
+      transform: scale(0.45);
+    }
+    .item_result .card1 {
+      width: 300px;
+      transform-origin: 0 50%;
+      left: 6px;
+    }
+    .item_result .card1 .popCardAreaP3 {
+      margin-left: 21px;
+    }
+    .item_result .card2 {
+      width: 300px;
+      transform-origin: 100% 50%;
+      right: 6px;
+    }
+    .layerpopup {
+      z-index: 2000;
+    }
+    .room-change-list {
+      width: 100%;
+    }
+    .room-change-list .scoreboard {
+      overflow: auto;
+      width: 95%;
+      height: 82px;
+    }
+    .room-change-list .scoreboard .bigroad {
+      width: 100%;
+      height: 96px;
+    }
+    .room-change-list .scoreboard .bigroad li {
+      width: 13px;
+      height: 13px;
+      text-align: center;
+    }
+    .layerpopup .scoreboard ul {
+      // transform: scale(0.6);
+      // transform-origin: 0 0;
+    }
+
+    .bg-opacity {
+      height: 150px;
+    }
+    .item_result {
+      height: 200px;
+    }
+
+    .r_c1_1 span {
+      display: block;
+      border: 4px solid #e71b1b;
+      border-radius: 50%;
+      width: 8px;
+      height: 8px;
+    }
+    .r_c1_2 span {
+      display: block;
+      border: 4px solid #0042ff;
+      border-radius: 50%;
+      width: 8px;
+      height: 8px;
+    }
+
+    .r_c2_1 span {
+      display: block;
+      border: 2px solid #e71b1b;
+      background-color: #e71b1b;
+      border-radius: 50%;
+      width: 12px;
+      height: 12px;
+    }
+    .r_c2_2 span {
+      display: block;
+      border: 2px solid #0042ff;
+      background-color: #0042ff;
+      border-radius: 50%;
+      width: 12px;
+      height: 12px;
+    }
+
+    .r_c3_1 span {
+      display: inline-block;
+      width: 2px;
+      height: 14px;
+      background-color: #e71b1b;
+      transform: rotate(45deg);
+    }
+    .r_c3_2 span {
+      display: inline-block;
+      width: 2px;
+      height: 14px;
+      background-color: #0042ff;
+      transform: rotate(45deg);
+    }
+
+    .movie-box .game_msg {
+      width: 100%;
+      margin: auto;
+      left: auto;
+      padding: unset;
+      box-sizing: border-box;
+    }
+    /*.chip_setup{display:none;}*/
+    .chip_setup {
+      position: absolute;
+      left: 10px;
+      top: 0px;
+      width: 40px;
+      height: 40px;
+    }
+    .layerpopup .gameover {
+      height: fit-content;
+      top: 50%;
+      // overflow: auto;
+    }
+    .layerpopup .content-info.game_setup_layer {
+      width: 100%;
+    }
+    .layerpopup .game_setup_ul li div input {
+      width: 80px;
+    }
+    .layerpopup .game_setup_ul li:nth-child(5) {
+      padding-left: 33px;
+    }
+    .game_setup {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 0px;
+    }
+    .game_setup_sub {
+      right: 10px;
+      top: -320px;
+    }
+    .game_setup_setup {
+      width: 40px;
+      height: 38px;
+    }
+    .game_setup_prev {
+      width: 40px;
+      height: 38px;
+    }
+    .game_setup_button {
+      width: 40px;
+      height: 38px;
+    }
+
+    .game_setup_b {
+      width: 40px;
+      height: 38px;
+      top: 0px;
+      position: absolute;
+      right: 10px;
+    }
+
+    .item_result .r_score {
+      left: 32%;
+      top: 56px;
+      font-size: 13px;
+    }
+    .item_result .r_score2 {
+      right: 0%;
+      top: 56px;
+      font-size: 13px;
+    }
+
+    .bet_explain_japan {
+      top: 7px;
+    }
+    .bet_explain_japan2 {
+      top: 8px;
+    }
+
+    .txt-blue.japan {
+      margin-top: 5px;
+    }
+    .txt-yellow.japan {
+      margin-top: 5px;
+    }
+    .txt-green.japan {
+      margin-top: 5px;
+    }
+
+    .event_jackpot {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      left: 0px;
+      // background-image: url(/images/event_mobile.jpg);
+      z-index: 9999999999;
+      text-align: center;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: none;
+    }
+    .event_jackpot_btn {
+      top: 130px;
+      left: 10px;
+    }
+    .event_jackpot_btn img {
+      width: 100px;
+    }
+    .layerpopup table.title-table input {
+      width: 70px;
+      margin-left: unset;
+    }
+
+    .layerpopup .content {
+      display: flex;
+    }
+    .layerpopup .content-info {
+      width: 100%;
+    }
+    .scroll {
+      overflow: auto;
+    }
+    .layerpopup .content-box {
+      padding: 0;
+    }
+    .react-calendar {
+      width: 100%;
+    }
+
+    @media screen and (min-width: 350px) {
+      #txt_btn_cancel,
+      #txt_btn_submit {
+        font-size: 22px;
+      }
+    }
+    @media screen and (min-width: 400px) {
+      #txt_btn_cancel,
+      #txt_btn_submit {
+        font-size: 24px;
+      }
+    }
+
+    @media screen and (min-width: 450px) {
+      #txt_btn_cancel,
+      #txt_btn_submit {
+        font-size: 26px;
+      }
+    }
+    @media screen and (min-width: 500px) {
+      #txt_btn_cancel,
+      #txt_btn_submit {
+        font-size: 28px;
+      }
+    }
+    @media screen and (min-width: 540px) {
+      #txt_btn_cancel,
+      #txt_btn_submit {
+        font-size: 32px;
+      }
+    }
+    @media screen and (min-width: 568px) {
+      #txt_btn_cancel,
+      #txt_btn_submit {
+        font-size: 33px;
+      }
+    }
+    @media screen and (min-width: 640px) {
+      #txt_btn_cancel,
+      #txt_btn_submit {
+        font-size: 33px;
+      }
+    }
+    @media screen and (min-width: 653px) {
+      #txt_btn_cancel,
+      #txt_btn_submit {
+        font-size: 34px;
+      }
+    }
+    @media screen and (min-width: 667px) {
+      #txt_btn_cancel,
+      #txt_btn_submit {
+        font-size: 34px;
+      }
+    }
+    @media screen and (min-width: 720px) {
+      #txt_btn_cancel,
+      #txt_btn_submit {
+        font-size: 35px;
+      }
+    }
+    @media screen and (min-width: 731px) {
+      #txt_btn_cancel,
+      #txt_btn_submit {
+        font-size: 35px;
+      }
+    }
+    @media screen and (min-width: 736px) {
+      #txt_btn_cancel,
+      #txt_btn_submit {
+        font-size: 36px;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      #txt_btn_cancel,
+      #txt_btn_submit {
+        font-size: 36px;
+      }
+    }
+    @media screen and (min-width: 812px) {
+      #txt_btn_cancel,
+      #txt_btn_submit {
+        font-size: 37px;
+      }
+    }
+    @media screen and (min-width: 823px) {
+      #txt_btn_cancel,
+      #txt_btn_submit {
+        font-size: 37px;
+      }
+    }
+    @media screen and (min-width: 1024px) {
+      #txt_btn_cancel,
+      #txt_btn_submit {
+        font-size: 38px;
+      }
+    }
+    @media screen and (min-width: 1366px) {
+      #txt_btn_cancel,
+      #txt_btn_submit {
+        font-size: 38px;
+      }
+    }
+    @media screen and (min-width: 1920px) {
+      #txt_btn_cancel,
+      #txt_btn_submit {
+        font-size: 39px;
+      }
+    }
+  }
+}

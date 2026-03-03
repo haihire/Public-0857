@@ -1,0 +1,2075 @@
+2026-01-22T10:50:43.441Z - TypeError: argument hostname is required
+    at vhost (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\vhost\index.js:39:11)
+    at file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/server.js:146:14
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:547:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)
+
+	-------------------------
+	Timestamp: 2026-01-22T10:50:43.445Z
+	Error in Function: DBinit
+	SQL Query:
+	CALL sp_DBinit();
+	
+	Parameters:
+	[]
+	
+	Data Context:
+	null
+	
+	Error Stack:
+	Error: connect ECONNREFUSED ::1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1615:16)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-22T10:50:44.453Z
+	Error in Function: DBinit
+	SQL Query:
+	CALL sp_DBinit();
+	
+	Parameters:
+	[]
+	
+	Data Context:
+	null
+	
+	Error Stack:
+	Error: connect ECONNREFUSED ::1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1615:16)
+	
+	-------------------------
+	2026-01-22T10:51:32.293Z - TypeError: argument hostname is required
+    at vhost (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\vhost\index.js:39:11)
+    at file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/server.js:146:14
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:547:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)
+
+	-------------------------
+	Timestamp: 2026-01-22T10:51:32.296Z
+	Error in Function: DBinit
+	SQL Query:
+	CALL sp_DBinit();
+	
+	Parameters:
+	[]
+	
+	Data Context:
+	null
+	
+	Error Stack:
+	Error: connect ECONNREFUSED ::1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1615:16)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-22T10:51:33.310Z
+	Error in Function: DBinit
+	SQL Query:
+	CALL sp_DBinit();
+	
+	Parameters:
+	[]
+	
+	Data Context:
+	null
+	
+	Error Stack:
+	Error: connect ECONNREFUSED ::1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1615:16)
+	
+	-------------------------
+	2026-01-23T11:45:24.243Z - TypeError: argument hostname is required
+    at vhost (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\vhost\index.js:39:11)
+    at file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/server.js:146:14
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:547:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)
+
+	-------------------------
+	Timestamp: 2026-01-23T11:45:24.273Z
+	Error in Function: DBinit
+	SQL Query:
+	CALL sp_DBinit();
+	
+	Parameters:
+	[]
+	
+	Data Context:
+	null
+	
+	Error Stack:
+	Error: Access denied for user 'root'@'localhost' (using password: YES)
+    at Packet.asError (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\lib\packets\packet.js:738:17)
+    at ClientHandshake.execute (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\lib\connection.js:481:34)
+    at PacketParser.onPacket (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\lib\connection.js:97:12)
+    at PacketParser.executeStart (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\lib\connection.js:104:25)
+    at Socket.emit (node:events:524:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:45:25.282Z
+	Error in Function: DBinit
+	SQL Query:
+	CALL sp_DBinit();
+	
+	Parameters:
+	[]
+	
+	Data Context:
+	null
+	
+	Error Stack:
+	Error: Access denied for user 'root'@'localhost' (using password: YES)
+    at Packet.asError (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\lib\packets\packet.js:738:17)
+    at ClientHandshake.execute (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\lib\connection.js:481:34)
+    at PacketParser.onPacket (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\lib\connection.js:97:12)
+    at PacketParser.executeStart (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\lib\connection.js:104:25)
+    at Socket.emit (node:events:524:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+	
+	-------------------------
+	2026-01-23T11:45:44.665Z - TypeError: argument hostname is required
+    at vhost (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\vhost\index.js:39:11)
+    at file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/server.js:146:14
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:547:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)
+
+	-------------------------
+	Timestamp: 2026-01-23T11:45:44.755Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  46,
+  46
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-46"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:45:45.760Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  46,
+  46
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-46"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:45:45.766Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  47,
+  47
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-47"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:45:46.770Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  47,
+  47
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-47"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:45:46.778Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  68,
+  68
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-68"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:45:47.780Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  68,
+  68
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-68"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:45:47.790Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  69,
+  69
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-69"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:45:48.792Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  69,
+  69
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-69"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:45:48.802Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  70,
+  70
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-70"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:45:49.809Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  70,
+  70
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-70"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:45:49.811Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  71,
+  71
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-71"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:45:50.812Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  71,
+  71
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-71"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:45:50.814Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  72,
+  72
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-72"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:45:51.814Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  72,
+  72
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-72"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:45:51.853Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  73,
+  73
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-73"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:45:52.859Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  73,
+  73
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-73"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:45:52.861Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  74,
+  74
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-74"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:45:53.862Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  74,
+  74
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-74"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:45:53.865Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  75,
+  75
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-75"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:45:54.865Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  75,
+  75
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-75"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:45:54.867Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  76,
+  76
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-76"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:45:55.873Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  76,
+  76
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-76"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:45:55.875Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  77,
+  77
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-77"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:45:56.876Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  77,
+  77
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-77"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:45:56.878Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  78,
+  78
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-78"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	2026-01-23T11:46:11.169Z - TypeError: argument hostname is required
+    at vhost (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\vhost\index.js:39:11)
+    at file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/server.js:146:14
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:547:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)
+
+	-------------------------
+	Timestamp: 2026-01-23T11:46:11.211Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  46,
+  46
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-46"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:52:14.730Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  46,
+  46
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-46"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:53:00.596Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  46,
+  46
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-46"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:53:01.601Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  46,
+  46
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-46"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:53:01.606Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  47,
+  47
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-47"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:53:02.619Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  47,
+  47
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-47"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:53:02.629Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  68,
+  68
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-68"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:53:03.631Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  68,
+  68
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-68"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:53:03.636Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  69,
+  69
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-69"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:53:04.638Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  69,
+  69
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-69"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:53:04.640Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  70,
+  70
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-70"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:53:05.640Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  70,
+  70
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-70"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:53:05.642Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  71,
+  71
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-71"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:53:06.650Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  71,
+  71
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-71"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at runNextTicks (node:internal/process/task_queues:69:3)
+    at process.processTimers (node:internal/timers:526:9)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:53:06.658Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  72,
+  72
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-72"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:53:07.658Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  72,
+  72
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-72"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:53:07.660Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  73,
+  73
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-73"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:53:08.661Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  73,
+  73
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-73"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:53:08.662Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  74,
+  74
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-74"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:53:09.668Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  74,
+  74
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-74"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at runNextTicks (node:internal/process/task_queues:69:3)
+    at process.processTimers (node:internal/timers:526:9)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:53:09.676Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  75,
+  75
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-75"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:53:10.683Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  75,
+  75
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-75"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T11:53:10.685Z
+	Error in Function: UpdateShoeGameNumber
+	SQL Query:
+	SELECT 
+  COUNT(*) as cnt,sShoeNumber
+    FROM tb_baccarat_progress_log
+    WHERE nTableNumber = ?
+        AND dRegDate > (
+            SELECT MAX(dRegDate)
+            FROM tb_baccarat_cutcard_log
+            WHERE nTableNumber = ?
+        )
+    ORDER BY dRegDate ASC
+	
+	Parameters:
+	[
+  76,
+  76
+]
+	
+	Data Context:
+	{
+  "RoomID": "baccarat-76"
+}
+	
+	Error Stack:
+	Error: In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'baccarat.tb_baccarat_progress_log.sShoeNumber'; this is incompatible with sql_mode=only_full_group_by
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UpdateShoeGameNumber (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:902:3)
+    at async CreateRoom (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Manager.js:52:5)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T12:07:58.691Z
+	Error in Function: set_end_game
+	SQL Query:
+	CALL sp_set_end_game(?);
+	
+	Parameters:
+	[
+  "aaa06"
+]
+	
+	Data Context:
+	{
+  "sUserID": "aaa06"
+}
+	
+	Error Stack:
+	Error: Illegal mix of collations (utf8mb4_0900_ai_ci,IMPLICIT) and (utf8mb4_general_ci,IMPLICIT) for operation '='
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async set_end_game (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:1174:3)
+    at async handleResult (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:612:11)
+    at async corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:61:7)
+    at async Login_search_user (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:1337:3)
+    at async file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/server.js:424:9
+    at async Lock.lockAndExecute (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Lock.js:16:7)
+    at async Socket.<anonymous> (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/server.js:423:7)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T12:07:59.700Z
+	Error in Function: set_end_game
+	SQL Query:
+	CALL sp_set_end_game(?);
+	
+	Parameters:
+	[
+  "aaa06"
+]
+	
+	Data Context:
+	{
+  "sUserID": "aaa06"
+}
+	
+	Error Stack:
+	Error: Illegal mix of collations (utf8mb4_0900_ai_ci,IMPLICIT) and (utf8mb4_general_ci,IMPLICIT) for operation '='
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async set_end_game (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:1174:3)
+    at async handleResult (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:612:11)
+    at async corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:61:7)
+    at async Login_search_user (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:1337:3)
+    at async file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/server.js:424:9
+    at async Lock.lockAndExecute (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Lock.js:16:7)
+    at async Socket.<anonymous> (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/server.js:423:7)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T12:08:08.866Z
+	Error in Function: set_end_game
+	SQL Query:
+	CALL sp_set_end_game(?);
+	
+	Parameters:
+	[
+  "aaa06"
+]
+	
+	Data Context:
+	{
+  "sUserID": "aaa06"
+}
+	
+	Error Stack:
+	Error: Illegal mix of collations (utf8mb4_0900_ai_ci,IMPLICIT) and (utf8mb4_general_ci,IMPLICIT) for operation '='
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async set_end_game (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:1174:3)
+    at async handleResult (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:612:11)
+    at async corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:61:7)
+    at async Login_search_user (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:1337:3)
+    at async file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/server.js:424:9
+    at async Lock.lockAndExecute (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Lock.js:16:7)
+    at async Socket.<anonymous> (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/server.js:423:7)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T12:08:09.874Z
+	Error in Function: set_end_game
+	SQL Query:
+	CALL sp_set_end_game(?);
+	
+	Parameters:
+	[
+  "aaa06"
+]
+	
+	Data Context:
+	{
+  "sUserID": "aaa06"
+}
+	
+	Error Stack:
+	Error: Illegal mix of collations (utf8mb4_0900_ai_ci,IMPLICIT) and (utf8mb4_general_ci,IMPLICIT) for operation '='
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async set_end_game (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:1174:3)
+    at async handleResult (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:612:11)
+    at async corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:61:7)
+    at async Login_search_user (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:1337:3)
+    at async file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/server.js:424:9
+    at async Lock.lockAndExecute (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Lock.js:16:7)
+    at async Socket.<anonymous> (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/server.js:423:7)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T12:20:03.237Z
+	Error in Function: set_end_game
+	SQL Query:
+	CALL sp_set_end_game(?);
+	
+	Parameters:
+	[
+  "aaa06"
+]
+	
+	Data Context:
+	{
+  "sUserID": "aaa06"
+}
+	
+	Error Stack:
+	Error: Illegal mix of collations (utf8mb4_0900_ai_ci,IMPLICIT) and (utf8mb4_general_ci,IMPLICIT) for operation '='
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async set_end_game (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:1174:3)
+    at async handleResult (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:612:11)
+    at async corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:61:7)
+    at async Login_search_user (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:1337:3)
+    at async file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/server.js:424:9
+    at async Lock.lockAndExecute (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Lock.js:16:7)
+    at async Socket.<anonymous> (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/server.js:423:7)
+	
+	-------------------------
+	
+	-------------------------
+	Timestamp: 2026-01-23T12:20:04.247Z
+	Error in Function: set_end_game
+	SQL Query:
+	CALL sp_set_end_game(?);
+	
+	Parameters:
+	[
+  "aaa06"
+]
+	
+	Data Context:
+	{
+  "sUserID": "aaa06"
+}
+	
+	Error Stack:
+	Error: Illegal mix of collations (utf8mb4_0900_ai_ci,IMPLICIT) and (utf8mb4_general_ci,IMPLICIT) for operation '='
+    at PromisePoolConnection.query (C:\Users\tjdtn\Desktop\portfolio\0857-server\node_modules\mysql2\promise.js:94:22)
+    at corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:58:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async set_end_game (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:1174:3)
+    at async handleResult (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:612:11)
+    at async corng (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:61:7)
+    at async Login_search_user (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/SQL.js:1337:3)
+    at async file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/server.js:424:9
+    at async Lock.lockAndExecute (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/Lock.js:16:7)
+    at async Socket.<anonymous> (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/server.js:423:7)
+	
+	-------------------------
+	
