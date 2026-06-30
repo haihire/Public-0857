@@ -5,17 +5,17 @@ export class BigEyeRoad {
   public row: number;
   public col: number;
   public bigEyeRoad: any[][];
-  public kkk: any[];
+  public visited: any[];
   public Before: [];
-  public gubun: any[];
+  public columnBreaks: any[];
   public cut: boolean;
   public constructor(info: any) {
     this.row = info.row;
     this.col = info.col;
     this.bigEyeRoad = [];
-    this.kkk = [];
+    this.visited = [];
     this.Before = [];
-    this.gubun = info.gubun;
+    this.columnBreaks = info.gubun;
     this.cut = info.cut;
   }
 
@@ -35,7 +35,7 @@ export class BigEyeRoad {
     //i === row / j === col
     for (let j = 0; j < bigRoad[0].length; j++) {
       for (let i = 0; i < this.row; i++) {
-        if (this.kkk.some((el) => el.i === i && el.j === j)) {
+        if (this.visited.some((el) => el.i === i && el.j === j)) {
           continue;
         }
 
@@ -44,26 +44,26 @@ export class BigEyeRoad {
         }
 
         if (i === 5 && j === 0) {
-          let imsi = 1;
+          let offset = 1;
           while (
-            bigRoad[i][j + imsi] &&
-            bigRoad[i][j + imsi].Win !== "" &&
-            bigRoad[i][j].Win === bigRoad[i][j + imsi].Win &&
-            !this.gubun.some(
-              (el) => el.rowIndex === i && el.colIndex === j + imsi
+            bigRoad[i][j + offset] &&
+            bigRoad[i][j + offset].Win !== "" &&
+            bigRoad[i][j].Win === bigRoad[i][j + offset].Win &&
+            !this.columnBreaks.some(
+              (el) => el.rowIndex === i && el.colIndex === j + offset
             )
           ) {
-            copyBigRoad.push(bigRoad[i][j + imsi].Win);
-            this.kkk.push({ i: i, j: j + imsi });
-            imsi += 1;
+            copyBigRoad.push(bigRoad[i][j + offset].Win);
+            this.visited.push({ i: i, j: j + offset });
+            offset += 1;
           }
           if (
-            this.gubun.some(
-              (el) => el.rowIndex === i && el.colIndex === j + imsi
+            this.columnBreaks.some(
+              (el) => el.rowIndex === i && el.colIndex === j + offset
             )
           ) {
-            copyBigRoad.push(bigRoad[i][j + imsi].Win);
-            this.kkk.push({ i: i, j: j + imsi });
+            copyBigRoad.push(bigRoad[i][j + offset].Win);
+            this.visited.push({ i: i, j: j + offset });
           }
         }
 
@@ -153,19 +153,19 @@ export class BigEyeRoad {
     copyBigRoad: any[],
     rows: any[]
   ) {
-    let imsi = 1;
+    let offset = 1;
 
     while (
-      bigRoad[i][j + imsi] &&
-      bigRoad[i][j + imsi].Win !== "" &&
-      bigRoad[i][j].Win === bigRoad[i][j + imsi].Win &&
-      this.gubun.some((el) => el.rowIndex === i && el.colIndex === j + imsi)
+      bigRoad[i][j + offset] &&
+      bigRoad[i][j + offset].Win !== "" &&
+      bigRoad[i][j].Win === bigRoad[i][j + offset].Win &&
+      this.columnBreaks.some((el) => el.rowIndex === i && el.colIndex === j + offset)
     ) {
-      // cc.log('특별1',this.gubun);
-      copyBigRoad.push(bigRoad[i][j + imsi].Win);
-      this.evaluatePosition(bigRoad, i, j + imsi, copyBigRoad, rows, true);
-      this.kkk.push({ i: i, j: j + imsi });
-      imsi += 1;
+      // cc.log('특별1',this.columnBreaks);
+      copyBigRoad.push(bigRoad[i][j + offset].Win);
+      this.evaluatePosition(bigRoad, i, j + offset, copyBigRoad, rows, true);
+      this.visited.push({ i: i, j: j + offset });
+      offset += 1;
     }
   }
   checkBoxComp(rows: any[]): any {
@@ -384,7 +384,7 @@ export class BigEyeRoad {
 
     let rowIndex = 0;
     let colIndex = 0;
-    let imsicolIndex = 0;
+    let tempColIndex = 0;
 
     for (let i = 0; i < data.length; i++) {
       if (data[i].Mark === copyLoad[rowIndex][colIndex].Mark) {
@@ -393,12 +393,12 @@ export class BigEyeRoad {
         if (
           rowIndex >= 6 ||
           copyLoad[rowIndex][colIndex].Mark !== "" ||
-          imsicolIndex !== 0
+          tempColIndex !== 0
         ) {
           rowIndex -= 1;
           colIndex += 1;
-          if (imsicolIndex === 0) {
-            imsicolIndex = colIndex;
+          if (tempColIndex === 0) {
+            tempColIndex = colIndex;
           }
         }
 
@@ -407,9 +407,9 @@ export class BigEyeRoad {
         colIndex += 1;
         rowIndex = 0;
 
-        if (imsicolIndex !== 0) {
-          colIndex = imsicolIndex;
-          imsicolIndex = 0;
+        if (tempColIndex !== 0) {
+          colIndex = tempColIndex;
+          tempColIndex = 0;
         }
 
         if (i === 0) {

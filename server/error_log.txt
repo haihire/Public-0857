@@ -2072,4 +2072,11 @@
     at async Socket.<anonymous> (file:///C:/Users/tjdtn/Desktop/portfolio/0857-server/server.js:423:7)
 	
 	-------------------------
-	
+	2026-06-14T00:47:13.060Z - RangeError [ERR_SOCKET_BAD_PORT]: options.port should be >= 0 and < 65536. Received type number (NaN).
+    at Server.listen (node:net:2159:5)
+    at SerialScannerServer.ws_listen (file:///C:/Users/tjdtn/Desktop/ingit/Baccarat/Pulbic-0857/server/SerialScanner.js:46:17)
+    at CreateRoom (file:///C:/Users/tjdtn/Desktop/ingit/Baccarat/Pulbic-0857/server/Manager.js:30:12)
+    at handleResult (file:///C:/Users/tjdtn/Desktop/ingit/Baccarat/Pulbic-0857/server/SQL.js:113:5)
+    at corng (file:///C:/Users/tjdtn/Desktop/ingit/Baccarat/Pulbic-0857/server/SQL.js:61:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async BringLimit (file:///C:/Users/tjdtn/Desktop/ingit/Baccarat/Pulbic-0857/server/SQL.js:1199:3)

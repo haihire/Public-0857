@@ -36,10 +36,10 @@ export class BigRoad {
       return { old: [], new: [] };
     }
 
-    const gubun: {
+    const columnBreaks: {
       rowIndex: number;
       colIndex: number;
-      imsicolIndex: number;
+      tempColIndex: number;
     }[] = [];
     this.bigRoad = [];
 
@@ -62,7 +62,7 @@ export class BigRoad {
     }
     let rowIndex = 0;
     let colIndex = 0;
-    let imsicolIndex = 0;
+    let tempColIndex = 0;
 
     let reRows = "";
     for (let i = 0; i < this.array.length; i++) {
@@ -76,18 +76,18 @@ export class BigRoad {
             if (
               rowIndex >= 6 ||
               this.bigRoad[rowIndex][colIndex].Win !== "" ||
-              imsicolIndex !== 0
+              tempColIndex !== 0
             ) {
               rowIndex -= 1;
               colIndex += 1;
-              if (imsicolIndex === 0) {
-                imsicolIndex = colIndex;
+              if (tempColIndex === 0) {
+                tempColIndex = colIndex;
               }
 
-              gubun.push({
+              columnBreaks.push({
                 rowIndex: rowIndex,
                 colIndex: colIndex,
-                imsicolIndex: imsicolIndex,
+                tempColIndex: tempColIndex,
               });
             }
 
@@ -107,18 +107,18 @@ export class BigRoad {
             if (
               rowIndex >= 6 ||
               this.bigRoad[rowIndex][colIndex].Win !== "" ||
-              imsicolIndex !== 0
+              tempColIndex !== 0
             ) {
               rowIndex -= 1;
               colIndex += 1;
-              if (imsicolIndex === 0) {
-                imsicolIndex = colIndex;
+              if (tempColIndex === 0) {
+                tempColIndex = colIndex;
               }
 
-              gubun.push({
+              columnBreaks.push({
                 rowIndex: rowIndex,
                 colIndex: colIndex,
-                imsicolIndex: imsicolIndex,
+                tempColIndex: tempColIndex,
               });
             }
 
@@ -137,9 +137,9 @@ export class BigRoad {
             colIndex += 1;
             rowIndex = 0;
 
-            if (imsicolIndex !== 0) {
-              colIndex = imsicolIndex;
-              imsicolIndex = 0;
+            if (tempColIndex !== 0) {
+              colIndex = tempColIndex;
+              tempColIndex = 0;
             }
 
             if (i === 0) {
@@ -166,18 +166,18 @@ export class BigRoad {
           if (
             rowIndex >= 6 ||
             this.bigRoad[rowIndex][colIndex].Win !== "" ||
-            imsicolIndex !== 0
+            tempColIndex !== 0
           ) {
             rowIndex -= 1;
             colIndex += 1;
-            if (imsicolIndex === 0) {
-              imsicolIndex = colIndex;
+            if (tempColIndex === 0) {
+              tempColIndex = colIndex;
             }
 
-            gubun.push({
+            columnBreaks.push({
               rowIndex: rowIndex,
               colIndex: colIndex,
-              imsicolIndex: imsicolIndex,
+              tempColIndex: tempColIndex,
             });
           }
 
@@ -191,9 +191,9 @@ export class BigRoad {
           colIndex += 1;
           rowIndex = 0;
 
-          if (imsicolIndex !== 0) {
-            colIndex = imsicolIndex;
-            imsicolIndex = 0;
+          if (tempColIndex !== 0) {
+            colIndex = tempColIndex;
+            tempColIndex = 0;
           }
 
           if (i === 0) {
@@ -216,7 +216,7 @@ export class BigRoad {
     return {
       old: Origin,
       new: this.bigRoad,
-      gubunIndex: gubun,
+      gubunIndex: columnBreaks,
       over: this.over,
     };
   }
