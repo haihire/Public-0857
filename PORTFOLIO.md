@@ -79,7 +79,7 @@ await getLock().lockAndExecute(sUserID, async () => {
 - **Security**: Helmet.js (Security Headers)
 - **CORS**: Custom CORS Policy Implementation
 - **Virtual Hosting**: vhost 3.0.2
-- **Process Management**: PM2 / nodemon
+- **Process Management**: nodemon
 
 ### Architecture Patterns
 - **Modular Architecture**: 기능별 모듈 분리

@@ -42,7 +42,7 @@
 | Concurrency | async-mutex 0.5.0 |
 | Security | Helmet.js 7.1.0, Custom CORS Policy |
 | Virtual Hosting | vhost 3.0.2 |
-| Process | PM2 / nodemon |
+| Process | nodemon |
 
 ---
 
