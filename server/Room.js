@@ -202,9 +202,6 @@ export default class Room {
       }
     }
   }
-  notifyNotice() {
-    game_notice(this.RoomID);
-  }
   connectProcess(data, money) {
     outFilter(data.sUserID);
     this.players.delete(data.sUserID); // Remove existing entry if present

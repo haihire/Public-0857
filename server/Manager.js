@@ -2,7 +2,12 @@ import Room from "./Room.js";
 import RRoom from "./RRoom.js";
 import SerialScannerServer from "./SerialScanner.js";
 import { SevUrl } from "./SevUrl.js";
-import { PadUserLogin, UpdateShoeGameNumber, userListUpdate } from "./SQL.js";
+import {
+  PadUserLogin,
+  UpdateShoeGameNumber,
+  userListUpdate,
+  game_notice,
+} from "./SQL.js";
 import URoom from "./URoom.js";
 import { countryList, roomToPort, StartPlaying } from "./Utility.js";
 
@@ -35,7 +40,7 @@ export async function CreateRoom(rooms, limits) {
     room.Ready();
     PadUserLogin({ id: roomData.sRoomNumber.trim(), RoomID: roomData.room_id });
     try {
-      noticePromises.push(room.notifyNotice());
+      noticePromises.push(game_notice(roomData.room_id));
     } catch (error) {
       console.error(
         `Error updating notices for room ${roomData.room_id}:`,
