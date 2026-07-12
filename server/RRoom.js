@@ -3,7 +3,7 @@ import {
   tb_baccarat_money_move_log,
   tb_transaction,
 } from "./SQL.js";
-import { getLock } from "./Lockmanager.js";
+import { getLock } from "./Lock.js";
 import { findRoomById, getURoom } from "./Manager.js";
 import { v4 as uuidv4 } from "uuid";
 export default class RRoom {
@@ -314,4 +314,9 @@ export default class RRoom {
     const key = `${sUserID}-${RoomID}`;
     return this.players.get(key) || null;
   }
+}
+
+const RRooms = new RRoom();
+export function getRRoom() {
+  return RRooms;
 }

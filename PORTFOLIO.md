@@ -245,7 +245,7 @@ export async function CreateRoom(rooms, limits) {
 ```javascript
 // EmitManager.js - 타겟팅 메시징
 export function Emit(Who, eventName, RoomID, data) {
-  const room = GetRoom(RoomID);
+  const room = findRoomById(RoomID);
   if (Who === "Player") {
     room.players.forEach((player) => {
       const socket = GetSockets_Name(player.sUserID);

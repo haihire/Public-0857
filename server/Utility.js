@@ -7,7 +7,8 @@ import crypto from "crypto";
 // import geoip from "geoip-lite";
 
 import xlsx from "xlsx";
-import { findRoomById, getRRoom } from "./Manager.js";
+import { findRoomById } from "./Manager.js";
+import { getRRoom } from "./RRoom.js";
 
 const __dirname = fileURLToPath(new URL(".", import.meta.url));
 

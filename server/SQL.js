@@ -1,11 +1,7 @@
 import { Emit, GetSockets_Name, SetSockets_Name } from "./EmitManager.js";
-import {
-  CreateRoom,
-  findRoomById,
-  getRoomList,
-  getURoom,
-  getRRoom,
-} from "./Manager.js";
+import { CreateRoom, findRoomById, getRoomList } from "./Manager.js";
+import { getRRoom } from "./RRoom.js";
+import { getURoom } from "./URoom.js";
 import mysql from "mysql2/promise";
 import {
   AutosFunction,

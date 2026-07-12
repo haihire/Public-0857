@@ -74,12 +74,3 @@ export function getRoomList() {
 function findRoomById(roomId) {
   return RoomList.get(roomId) || null;
 }
-
-const RRooms = new RRoom();
-export function getRRoom() {
-  return RRooms;
-}
-const Urooms = new URoom();
-export function getURoom() {
-  return Urooms;
-}

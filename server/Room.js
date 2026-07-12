@@ -41,8 +41,9 @@ import {
 } from "./SQL.js";
 // import axios from "axios";
 import { SevUrl } from "./SevUrl.js";
-import { findRoomById, getRRoom, getURoom } from "./Manager.js";
-
+import { findRoomById } from "./Manager.js";
+import { getRRoom } from "./RRoom.js";
+import { getURoom } from "./URoom.js";
 let SendData;
 const RATE_PAIR = 12;
 const RATE_TIE = 9;

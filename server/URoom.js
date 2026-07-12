@@ -59,3 +59,8 @@ export default class URoom {
     }
   }
 }
+
+const Urooms = new URoom();
+export function getURoom() {
+  return Urooms;
+}

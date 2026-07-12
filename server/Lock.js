@@ -22,3 +22,9 @@ export default class Lock {
     }
   }
 }
+
+const Locks = new Lock();
+
+export function getLock() {
+  return Locks;
+}

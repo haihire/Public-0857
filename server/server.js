@@ -28,7 +28,9 @@ import {
   adminCheck_ctrl,
   deleteResult_ctrl,
 } from "./SQL.js";
-import { findRoomById, getRoomList, getRRoom, getURoom } from "./Manager.js";
+import { findRoomById, getRoomList } from "./Manager.js";
+import { getRRoom } from "./RRoom.js";
+import { getURoom } from "./URoom.js";
 import {
   // blockPhilippines,
   blockWhiteIP2,
@@ -58,7 +60,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import helmet from "helmet";
 import vhost from "vhost";
-import { getLock } from "./Lockmanager.js";
+import { getLock } from "./Lock.js";
 import ScannerServers from "./ReceiveScanner.js";
 
 const port = process.env.PORT || SevUrl().server_port;
