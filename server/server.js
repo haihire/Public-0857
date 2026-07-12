@@ -28,7 +28,7 @@ import {
   adminCheck_ctrl,
   deleteResult_ctrl,
 } from "./SQL.js";
-import { GetRoom, getRoomList, getRRoom, getURoom } from "./Manager.js";
+import { findRoomById, getRoomList, getRRoom, getURoom } from "./Manager.js";
 import {
   // blockPhilippines,
   blockWhiteIP2,
@@ -160,7 +160,7 @@ IntoPage.post("/Limit-endpoint", (req, res) => {
   console.log("Limit-endpoint", data);
 
   if (nRoomNo && data) {
-    GetRoom("baccarat-" + nRoomNo).changeLimit(data);
+    findRoomById("baccarat-" + nRoomNo).changeLimit(data);
     res.send("Success");
   } else {
     res.send("Fail");
@@ -228,7 +228,7 @@ IntoPage.post("/TableLimit-endpoint", (req, res) => {
   // console.log('TableLimit',req.body);
   const RoomID = req.body.nRoomNo;
   const data = req.body.data;
-  const room = GetRoom(RoomID);
+  const room = findRoomById(RoomID);
   if (room) {
     room.changeLimit(data);
   }
@@ -257,7 +257,7 @@ IntoPage.post("/resultWinner", async (req, res) => {
   const data = req.body;
   console.log("resultWinner", data);
   try {
-    GetRoom(data.RoomID).resultWinner(data, false, true);
+    findRoomById(data.RoomID).resultWinner(data, false, true);
     res.send("Success");
   } catch (e) {
     console.error("Error in resultWinner endpoint:", e);
@@ -268,7 +268,7 @@ IntoPage.post("/Shuffle", async (req, res) => {
   console.log("Shuffle");
   const data = req.body;
   try {
-    GetRoom(data.RoomID).Shuffle();
+    findRoomById(data.RoomID).Shuffle();
     res.send("Success");
   } catch (e) {
     console.error("Error in Shuffle endpoint:", e);
@@ -279,7 +279,7 @@ IntoPage.post("/Start", async (req, res) => {
   console.log("Start");
   const data = req.body;
 
-  const room = GetRoom(data.RoomID);
+  const room = findRoomById(data.RoomID);
   if (room && room.serialScanner) {
     room.serialScanner.AllowScanner = false;
     res.send("Scanner stopped");
@@ -342,7 +342,7 @@ io.on("connection", (socket) => {
     await betLogPlz(data, socket);
   });
   socket.on("send_SumClick", async function (data) {
-    GetRoom(data.RoomID).padCounting();
+    findRoomById(data.RoomID).padCounting();
   });
   /* */
   /* For Control */
@@ -367,13 +367,13 @@ io.on("connection", (socket) => {
     isPad_ctrl.RoomID = data.RoomID;
     setCtrl(data.RoomID, socket);
 
-    socket.emit("rev_show_room_ctrl", GetRoom(data.RoomID));
+    socket.emit("rev_show_room_ctrl", findRoomById(data.RoomID));
   });
   socket.on("send_manual_result_ctrl", function (data) {
-    GetRoom(data.RoomID).resultWinner(data, false, true);
+    findRoomById(data.RoomID).resultWinner(data, false, true);
   });
   socket.on("ForceShoeChange_ctrl", function (data) {
-    GetRoom(data.RoomID).ForceShoeChange_ctrl();
+    findRoomById(data.RoomID).ForceShoeChange_ctrl();
   });
   socket.on("ForceResultDelete_ctrl", function (data) {
     deleteResult_ctrl(data);
@@ -445,7 +445,7 @@ io.on("connection", (socket) => {
     try {
       await getLock()
         .lockAndExecute(context.Private_Name, async () => {
-          await GetRoom(data.RoomID).EnterRoom(
+          await findRoomById(data.RoomID).EnterRoom(
             {
               sUserID: context.Private_Name,
               sUserCode: data.sUserCode,
@@ -472,7 +472,7 @@ io.on("connection", (socket) => {
     try {
       await getLock()
         .lockAndExecute(context.Private_Name, async () => {
-          await GetRoom(context.RoomID).DisConnect(
+          await findRoomById(context.RoomID).DisConnect(
             {
               sUserID: context.Private_Name,
               type: context.Type,
@@ -491,7 +491,7 @@ io.on("connection", (socket) => {
     try {
       await getLock()
         .lockAndExecute(context.Private_Name, async () => {
-          await GetRoom(context.RoomID).MoveConnect(
+          await findRoomById(context.RoomID).MoveConnect(
             {
               sUserID: context.Private_Name,
               sUserCode: data.sUserCode,
@@ -524,7 +524,7 @@ io.on("connection", (socket) => {
   });
   socket.on("MoneyCheck", async function (data) {
     try {
-      const room = GetRoom(data.RoomID);
+      const room = findRoomById(data.RoomID);
       const dataSum = data.money.reduce((a, b) => a + b.money, 0);
 
       const U = getURoom().selPlayer(data.sUserID);
@@ -605,7 +605,7 @@ io.on("connection", (socket) => {
   socket.on("cancelBet", async function (data) {
     const U = getURoom().selPlayer(data.sUserID);
 
-    await GetRoom(data.RoomID)
+    await findRoomById(data.RoomID)
       .cancelBet(data)
       .then((el) => {
         if (el === "CacelBetFail") {
@@ -651,20 +651,20 @@ io.on("connection", (socket) => {
   });
   socket.on("RoomActiveOnOff", function (data) {
     if (data.RoomID) {
-      GetRoom(data.RoomID).RoomActiveOnOff(data);
+      findRoomById(data.RoomID).RoomActiveOnOff(data);
     }
   });
   socket.on("ResultWinner", function (data) {
-    GetRoom(data.RoomID).resultWinner(data, false);
+    findRoomById(data.RoomID).resultWinner(data, false);
   });
   socket.on("Shuffle", function (data) {
-    GetRoom(data.RoomID).Shuffle();
+    findRoomById(data.RoomID).Shuffle();
   });
   socket.on("Ready", function (data) {
-    GetRoom(data.RoomID).Ready();
+    findRoomById(data.RoomID).Ready();
   });
   socket.on("Start", function (data) {
-    GetRoom(data.RoomID).Start();
+    findRoomById(data.RoomID).Start();
   });
 
   socket.on("disconnect", async function () {
@@ -677,7 +677,7 @@ io.on("connection", (socket) => {
             await getLock()
               .lockAndExecute(context.Private_Name, async () => {
                 if (context.RoomID) {
-                  await GetRoom(context.RoomID).DisConnect({
+                  await findRoomById(context.RoomID).DisConnect({
                     type: context.Type,
                     sUserID: context.Private_Name,
                     ip: context.ip,
@@ -717,7 +717,7 @@ io.on("connection", (socket) => {
 
       if (context.Type === "d") {
         if (context.RoomID) {
-          await GetRoom(context.RoomID).DisConnect({
+          await findRoomById(context.RoomID).DisConnect({
             type: context.Type,
             sUserID: context.Private_Name,
             ip: context.ip,

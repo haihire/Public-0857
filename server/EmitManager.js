@@ -1,4 +1,4 @@
-import { GetRoom } from "./Manager.js";
+import { findRoomById } from "./Manager.js";
 import { csl, getPad } from "./Utility.js";
 var io = null;
 var Sockets_Name = {};
@@ -32,7 +32,7 @@ const padSendSocketName = [
 ];
 // 전송
 export function Emit(Who, _SocketName, RoomID, _Dictionary = null) {
-  const Rooms = GetRoom(RoomID);
+  const Rooms = findRoomById(RoomID);
   if (!Rooms) {
     console.error(`Room not found: ${RoomID}`);
     return;

@@ -1,7 +1,7 @@
 import { Emit, GetSockets_Name, SetSockets_Name } from "./EmitManager.js";
 import {
   CreateRoom,
-  GetRoom,
+  findRoomById,
   getRoomList,
   getURoom,
   getRRoom,
@@ -112,7 +112,7 @@ async function handleResult(f_name, result, data, socket) {
   } else if (f_name == "BringLimit") {
     CreateRoom(data, result);
   } else if (f_name == "game_notice") {
-    GetRoom(data).MainNotice = result[0].msg;
+    findRoomById(data).MainNotice = result[0].msg;
   } else if (f_name == "SQL_addAuto") {
     if (result.length != 0) {
       let Count = 0;
@@ -138,7 +138,7 @@ async function handleResult(f_name, result, data, socket) {
             total: 0,
           };
           sp_auto_connect(SendData);
-          GetRoom(SendData.RoomID).AutoConnect(SendData, key.mb_money);
+          findRoomById(SendData.RoomID).AutoConnect(SendData, key.mb_money);
         } else {
           Count += 1;
         }
@@ -247,7 +247,7 @@ async function handleResult(f_name, result, data, socket) {
   } else if (f_name == "Select_Room") {
     // const roomData = result[0][0];
     const RoomID = result[0].room_id;
-    GetRoom(RoomID).changeBetTime({
+    findRoomById(RoomID).changeBetTime({
       nBettingTime: result[0].nBettingTime,
       nWinnerShowTime: result[0].nWinnerShowTime,
 
@@ -258,13 +258,13 @@ async function handleResult(f_name, result, data, socket) {
 
     if (socket == null)
       Emit("Dealer", "Select_Room", RoomID, {
-        room: GetRoom(RoomID),
-        ObjectToJson: GetRoom(RoomID).getRoomData(),
+        room: findRoomById(RoomID),
+        ObjectToJson: findRoomById(RoomID).getRoomData(),
       });
     else
       socket.emit("Select_Room", {
-        room: GetRoom(RoomID),
-        ObjectToJson: GetRoom(RoomID).getRoomData(),
+        room: findRoomById(RoomID),
+        ObjectToJson: findRoomById(RoomID).getRoomData(),
       });
   } else if (f_name == "support_log") {
     const r_room = result.slice(-MaxCount);
@@ -277,7 +277,7 @@ async function handleResult(f_name, result, data, socket) {
   else if (f_name === "token_check") {
     const tokenExists = result[0];
     const userLevel = tokenExists ? result[0].mb_userLv : null;
-    const room = GetRoom(data.RoomID);
+    const room = findRoomById(data.RoomID);
     const dealerExists = room && room.DealerID !== "";
 
     if (!tokenExists) {
@@ -334,7 +334,7 @@ async function handleResult(f_name, result, data, socket) {
       SendData = {
         sUserID: result[0].mb_id,
         name: result[0].mb_name,
-        RoomData: GetRoom(data.RoomID),
+        RoomData: findRoomById(data.RoomID),
       };
       socket.emit("Dealer_Login", SendData);
       let Dealerdata = {
@@ -344,7 +344,10 @@ async function handleResult(f_name, result, data, socket) {
         RoomID: data.RoomID,
         ip: data.ip,
       };
-      socket.emit("invasion", GetRoom(data.RoomID).DealerConnect(Dealerdata));
+      socket.emit(
+        "invasion",
+        findRoomById(data.RoomID).DealerConnect(Dealerdata),
+      );
       Select_Room(data, socket);
       DealerUpdateOnOff({
         onoff: 1,
@@ -362,8 +365,8 @@ async function handleResult(f_name, result, data, socket) {
     SendData = {
       RoomID: data.RoomID,
       status: data.onoff === 0 ? "Close" : "Open",
-      sSite: GetRoom(data.RoomID).sSite,
-      Playing: GetRoom(data.RoomID).Playing,
+      sSite: findRoomById(data.RoomID).sSite,
+      Playing: findRoomById(data.RoomID).Playing,
     };
     statusUpdate(SendData);
   } else if (f_name == "change_game") {
@@ -393,7 +396,7 @@ async function handleResult(f_name, result, data, socket) {
           };
           enterSingleLobby(SendData);
         } else if (type === "statusLobby") {
-          GetRoom(data.RoomID).status = data.status;
+          findRoomById(data.RoomID).status = data.status;
           GetIdEmit(key.sUserID, type, data);
         } else if (type === "notifyNotice") {
           GetIdEmit(key.sUserID, type, data);
@@ -409,7 +412,7 @@ async function handleResult(f_name, result, data, socket) {
     }
     if (isExistPad(data.RoomID) && type === "Single") {
       SendData = {
-        sUserID: GetRoom(data.RoomID).RoomNumber,
+        sUserID: findRoomById(data.RoomID).RoomNumber,
         nTableNumber: data.RoomID.slice(9),
         type: type,
         sSite: data.sSite,
@@ -441,7 +444,7 @@ async function handleResult(f_name, result, data, socket) {
     returnList(SendData);
   } else if (f_name == "enterSingleLobby") {
     const sUserID = data.sUserID;
-    const s_room = GetRoom("baccarat-" + data.nTableNumber);
+    const s_room = findRoomById("baccarat-" + data.nTableNumber);
     const r_room = result.slice(-MaxCount);
     SendData = {
       idx: data.nTableNumber,
@@ -467,8 +470,8 @@ async function handleResult(f_name, result, data, socket) {
           RoomID: RoomID,
         });
       } else {
-        GetRoom(RoomID).ShoeNumber = sShoeNumber;
-        GetRoom(RoomID).ShoeGameNumber = ShoeGameNumber + 1;
+        findRoomById(RoomID).ShoeNumber = sShoeNumber;
+        findRoomById(RoomID).ShoeGameNumber = ShoeGameNumber + 1;
       }
     }
   } else if (f_name == "RefreshUserMoney") {
@@ -496,7 +499,7 @@ async function handleResult(f_name, result, data, socket) {
           sUserID: key.sUserID,
           move: false,
         };
-        GetRoom(RoomID).DisConnect(SendData);
+        findRoomById(RoomID).DisConnect(SendData);
       }
     }
   } else if (f_name == "Ploadmoney") {
@@ -518,7 +521,7 @@ async function handleResult(f_name, result, data, socket) {
       ]),
       total: 0,
     };
-    GetRoom(data.RoomID).connectPlayer(ClientData, result[0].mb_money);
+    findRoomById(data.RoomID).connectPlayer(ClientData, result[0].mb_money);
   } else if (f_name == "sp_balance_change") {
     if (data.ip !== "auto")
       GetIdEmit(data.sUserID, "RefreshUserMoney", result[0][0].mb_money);
@@ -531,7 +534,7 @@ async function handleResult(f_name, result, data, socket) {
     //     csl("tb_transaction Post err msg: ", error);
     //   });
   } else if (f_name == "Scan_data") {
-    // GetRoom(data.table).ScanData(data);
+    // findRoomById(data.table).ScanData(data);
   }
   // Player Require Code
   // else if (f_name == "Lobby_search_user") {
@@ -698,7 +701,7 @@ async function handleResult(f_name, result, data, socket) {
       if (BetData) {
         BetData = Object.fromEntries(BetData.Betting);
       }
-      const room = GetRoom(data.RoomID);
+      const room = findRoomById(data.RoomID);
       if (data.move) {
         socket.emit("MoveRoomSuccess", {
           BetData: BetData,
@@ -734,8 +737,8 @@ async function handleResult(f_name, result, data, socket) {
     }
   } else if (f_name === "DuplicateShoe") {
     if (!result[0]) {
-      GetRoom(data.RoomID).ShoeNumber = data.ShoeNumber;
-      GetRoom(data.RoomID).ShoeGameNumber = 0;
+      findRoomById(data.RoomID).ShoeNumber = data.ShoeNumber;
+      findRoomById(data.RoomID).ShoeGameNumber = 0;
     } else {
       DuplicateShoe(data);
     }
@@ -754,7 +757,7 @@ async function handleResult(f_name, result, data, socket) {
       socket.emit("rev_adminCheck");
     }
   } else if (f_name === "show_room") {
-    const room = GetRoom(data.RoomID);
+    const room = findRoomById(data.RoomID);
     if (!room) {
       socket.emit("ErrorDisconnect", { msg: "Room not found" });
       return;
@@ -772,7 +775,7 @@ async function handleResult(f_name, result, data, socket) {
     socket.emit("rev_betLogPlz", result);
   } else if (f_name === "PadUserLogin") {
     if (result[0]) {
-      GetRoom(data.RoomID).PadUserLogin({
+      findRoomById(data.RoomID).PadUserLogin({
         RoomID: data.RoomID,
         sUserID: result[0].mb_id,
         sUserCode: result[0].mb_userCode,
@@ -784,7 +787,7 @@ async function handleResult(f_name, result, data, socket) {
     }
   } else if (f_name === "PadUserGet") {
     if (result[0]) {
-      GetRoom(data.RoomID).padSet({
+      findRoomById(data.RoomID).padSet({
         RoomID: data.RoomID,
         sUserID: result[0].mb_id,
         sUserCode: result[0].mb_userCode,
@@ -1152,7 +1155,7 @@ export async function Scan_data(data, find) {
         1, now()
     );`;
   const params = [
-    GetRoom(data.table).getLogNum(),
+    findRoomById(data.table).getLogNum(),
     data.table.slice(9),
     `baccarat-${data.table.slice(9)}`,
     find,

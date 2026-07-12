@@ -7,7 +7,7 @@ import crypto from "crypto";
 // import geoip from "geoip-lite";
 
 import xlsx from "xlsx";
-import { GetRoom, getRRoom } from "./Manager.js";
+import { findRoomById, getRRoom } from "./Manager.js";
 
 const __dirname = fileURLToPath(new URL(".", import.meta.url));
 
@@ -144,13 +144,13 @@ export function blockWhiteIP2(req, res, next) {
 const roomIdleTimers = new Map();
 const DEFAULT_IDLE_MS = 180000;
 export function StartPlaying(RoomID) {
-  GetRoom(RoomID).Playing = true;
+  findRoomById(RoomID).Playing = true;
   const tictok = roomIdleTimers.get(RoomID);
   if (tictok) {
     clearTimeout(tictok);
   }
   const timer = setTimeout(() => {
-    GetRoom(RoomID).stopPlaying();
+    findRoomById(RoomID).stopPlaying();
   }, DEFAULT_IDLE_MS);
   roomIdleTimers.set(RoomID, timer);
 }

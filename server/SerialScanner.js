@@ -1,6 +1,6 @@
 import net from "net";
 import { converText, winnerCalc } from "./Utility.js";
-import { GetRoom } from "./Manager.js";
+import { findRoomById } from "./Manager.js";
 import { buffer } from "./SQL.js";
 
 export default class SerialScannerServer {
@@ -32,12 +32,12 @@ export default class SerialScannerServer {
     this.port = port;
     this.RoomNumber = RoomNumber.trim();
     this.server = net.createServer((client) =>
-      this.handleClientConnection(client)
+      this.handleClientConnection(client),
     );
     this.server.on("error", (err) => {
       if (err.code === "EADDRINUSE") {
         console.warn(
-          `⚠️  [Room ${this.RoomID}] port ${port} is already in use — skipping scanner.`
+          `⚠️  [Room ${this.RoomID}] port ${port} is already in use — skipping scanner.`,
         );
       } else {
         console.error(`❌ [Room ${this.RoomID}] scanner error:`, err);
@@ -48,7 +48,7 @@ export default class SerialScannerServer {
       // .log
       // `SerialScannerServer is listening on port ${port} ${this.RoomID} ${this.RoomNumber}`
       // ();
-      // console.log('Get',GetRoom(this.RoomID).RoomNumber);
+      // console.log('Get',findRoomById(this.RoomID).RoomNumber);
     });
   }
 
@@ -133,7 +133,7 @@ export default class SerialScannerServer {
   // 받은 버퍼 데이터를 처리하는 메서드
   processBufferData(combinedBuffer) {
     let type = "";
-    const room = GetRoom(this.RoomID);
+    const room = findRoomById(this.RoomID);
     //번카드 끝났을 때
     if (
       this.burnCardCount > 0 &&
@@ -269,7 +269,7 @@ export default class SerialScannerServer {
           SerialP: this.pOriginCard,
           SerialB: this.bOriginCard,
         },
-        false
+        false,
       );
       // 초기화
       this.pCard = [];

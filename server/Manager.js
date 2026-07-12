@@ -64,10 +64,6 @@ export async function CreateRoom(rooms, limits) {
 
   userListUpdate();
 }
-// 2. Get a specific room
-export function GetRoom(roomId) {
-  return findRoomById(roomId);
-}
 
 // 3. Get the entire room list
 export function getRoomList() {

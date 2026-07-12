@@ -41,7 +41,7 @@
 │  │                                                           │   │
 │  │  ┌────────────┐  ┌────────────┐  ┌────────────┐        │   │
 │  │  │EmitManager │  │LockManager │  │SerialScanner│       │   │
-│  │  │ (Events)   │  │(Concurrency│  │ (Hardware) │        │   │
+│  │  │ (Events)   │  │(Concurrency)│  │ (Hardware) │        │   │
 │  │  └────────────┘  └────────────┘  └────────────┘        │   │
 │  └───────────────────────────────────────────────────────┘   │
 │                         │                                        │
@@ -66,6 +66,7 @@
 ## 멀티 호스트 아키텍처 (Multi-Host Architecture)
 
 ### Virtual Host 라우팅 구조
+
 ```
                     Incoming Request
                           │
@@ -87,6 +88,7 @@
 ```
 
 **특징**:
+
 - 단일 서버에서 여러 도메인/서브도메인 처리
 - 각 클라이언트 타입별 독립적인 정적 파일 제공
 - CORS 정책 중앙 관리
@@ -96,6 +98,7 @@
 ## 실시간 통신 플로우 (Real-time Communication Flow)
 
 ### Socket.IO 이벤트 흐름
+
 ```
   User Action               Server Processing              Room Update
       │                           │                            │
@@ -135,6 +138,7 @@
 ```
 
 ### EmitManager를 통한 이벤트 전파
+
 ```
                      ┌──────────────┐
                      │ EmitManager  │
@@ -150,6 +154,7 @@
 ```
 
 **타겟팅 옵션**:
+
 - `"Player"`: 룸의 모든 플레이어에게 전송
 - `"Dealer"`: 딜러에게만 전송
 - `"All"`: 플레이어 + 딜러 전체에게 전송
@@ -159,6 +164,7 @@
 ## 동시성 제어 아키텍처 (Concurrency Control Architecture)
 
 ### Lockmanager를 통한 사용자별 Lock
+
 ```
 Multiple Concurrent Requests
      │         │         │
@@ -189,6 +195,7 @@ Multiple Concurrent Requests
 ```
 
 **동작 원리**:
+
 1. 각 사용자(sUserID)별로 독립적인 Mutex Lock 생성
 2. 동일 사용자의 요청은 순차 처리 (Queue)
 3. 다른 사용자의 요청은 병렬 처리 가능
@@ -256,6 +263,7 @@ Multiple Concurrent Requests
 ## 데이터베이스 연동 (Database Integration)
 
 ### Connection Pool 패턴
+
 ```
                  ┌──────────────────┐
     Request 1 ───┤                  │
@@ -267,11 +275,13 @@ Multiple Concurrent Requests
 ```
 
 **장점**:
+
 - 연결 재사용으로 성능 향상
 - 동시 요청 처리 능력 향상
 - 연결 수 제한으로 DB 부하 관리
 
 ### Retry 메커니즘
+
 ```
 SQL Query
    │
@@ -294,6 +304,7 @@ Execute
 ## 하드웨어 통합 (Hardware Integration)
 
 ### Serial Scanner 통신 구조
+
 ```
 Physical Card Scanner
         │
@@ -319,6 +330,7 @@ SerialScanner.js
 ```
 
 **특징**:
+
 - 각 Room마다 독립적인 Scanner Server
 - Buffer 기반 프로토콜 파싱
 - 실시간 카드 인식 및 결과 처리
@@ -328,6 +340,7 @@ SerialScanner.js
 ## 보안 아키텍처 (Security Architecture)
 
 ### 다층 보안 구조
+
 ```
 ┌────────────────────────────────────────┐
 │  1. Network Layer                      │
@@ -363,6 +376,7 @@ SerialScanner.js
 ## 확장성 고려사항 (Scalability Considerations)
 
 ### 수평 확장 가능 구조
+
 ```
     Load Balancer
          │
@@ -383,6 +397,7 @@ SerialScanner.js
 ```
 
 **현재 구조의 확장 가능성**:
+
 - ✅ 모듈화된 구조로 마이크로서비스 전환 용이
 - ✅ Room 단위 독립성으로 샤딩 가능
 - ⚠️ Session 관리 Redis 도입 필요
@@ -399,5 +414,3 @@ SerialScanner.js
 5. **Async/Await**: 비동기 처리로 블로킹 최소화
 
 ---
-
-이 아키텍처는 **확장 가능하고**, **유지보수 가능하며**, **안정적인** 실시간 멀티 룸 서버를 구현합니다.

@@ -41,7 +41,7 @@ import {
 } from "./SQL.js";
 // import axios from "axios";
 import { SevUrl } from "./SevUrl.js";
-import { GetRoom, getRRoom, getURoom } from "./Manager.js";
+import { findRoomById, getRRoom, getURoom } from "./Manager.js";
 
 let SendData;
 const RATE_PAIR = 12;
@@ -1696,7 +1696,7 @@ export default class Room {
     // console.log("MoveConnect", data);
 
     this.players.delete(data.sUserID); // Remove player from Map
-    GetRoom(data.RoomID).EnterRoom(
+    findRoomById(data.RoomID).EnterRoom(
       {
         ip: data.ip,
         sUserID: data.sUserID,

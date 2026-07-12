@@ -4,7 +4,7 @@ import {
   tb_transaction,
 } from "./SQL.js";
 import { getLock } from "./Lockmanager.js";
-import { GetRoom, getURoom } from "./Manager.js";
+import { findRoomById, getURoom } from "./Manager.js";
 import { v4 as uuidv4 } from "uuid";
 export default class RRoom {
   constructor() {
@@ -304,7 +304,7 @@ export default class RRoom {
 
     // 4) 업데이트
     uniqueUsers.forEach(({ RoomID, sUserID }) => {
-      GetRoom(RoomID).updatePlayers(sUserID);
+      findRoomById(RoomID).updatePlayers(sUserID);
     });
 
     return "ok";
